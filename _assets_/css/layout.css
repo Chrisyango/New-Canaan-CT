@@ -304,13 +304,13 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 
 /*--------------- #content ---------------*/
 #content .container {width: 1500px;}
-#content h2 {font-size: 40px; line-height: 32px; letter-spacing: 0.06em; font-weight: 600; color: #252525; text-transform: uppercase;}
+#content h2 {position: relative; top: 7px; left: -3px; font-size: 40px; line-height: 32px; letter-spacing: 0.06em; font-weight: 600; color: #252525; text-transform: uppercase; margin: 0;}
 #content .btn {padding: 0; background-color: #fff; color: #464449!important; border: 4px solid #2491b2; border-radius: 25px; font-weight: 300!important;}
 
 
 /*--------------- #news ---------------*/
 #news {padding: 63px 0;}
-#news h2 {position: relative; top: 7px; left: -3px; float: left; margin: 0;}
+#news h2 {float: left;}
 #news h2:before {content: ''; position: absolute; top: -32px; left: -77px; width: 468px; height: 50px; background-color:#ddde90; z-index: -1;}
 #news .btn {float: right; font-size: 14px; height: 40px; line-height: 32px; letter-spacing: 0.025em; width: 230px; margin-right: 82px; }
 
@@ -327,6 +327,23 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 .news-link h3 {font-size: 28px; line-height: 38px; font-weight: 600; letter-spacing: 0.005em; color: #252525; text-transform: capitalize; margin: 12px 0;}
 .news-link a {position: relative; font-size: 16px; line-height: 32px; letter-spacing: 0.05em; color: #6b787d; text-transform: uppercase; text-decoration: none; display: inline-block; margin-top: 51px;}
 .news-link a:after {content: '>'; position: absolute; top: -1px; right: -19px;}
+
+
+/*--------------- #notification ---------------*/
+#notification {padding: 84px 0;}
+#notification h2:before {content: ''; position: absolute; top: -32px; left: -77px; width: 650px; height: 50px; background-color: #ddde90; z-index: -1;}
+
+#signup {margin: 77px 20px;}
+#signup label {font-family: 'Miller'; font-size: 26px; line-height: 32px; letter-spacing: 0.01em; color: #111111; text-transform: capitalize; margin-bottom: 23px;}
+#signup input {height: 60px; width: 740px; max-width: 100%; border-radius: 30px; padding: 0 39px; font-size: 16px; letter-spacing: 0.005em; color: #6b787d; margin-bottom: 30px;}
+#signup input::placeholder {font-size: 16px; letter-spacing: 0.005em; color: #6b787d;}
+#signup .btn {font-size: 14px; height: 40px; line-height: 32px; letter-spacing: 0.025em; width: 240px; margin-right: 16px;}
+#signup .btn:last-of-type {margin: 0; width: 133px;}
+
+
+/*--------------- #calendar ---------------*/
+#calendar {padding: 63px 0 0 63px;}
+#calendar img {width: 370px;}
 
 /* -----------------------------------------
 

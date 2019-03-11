@@ -132,7 +132,7 @@
 					<div class="clearfix">
 						<h2>news stories</h2>
 						<a href="./" class="btn">news archives</a>
-					</div>
+					</div><!-- /.clearfix -->
 					<div id="news-links" class="owl-carousel">
 						<div class="news-link">
 							<span>november 22, 2018</span>
@@ -149,21 +149,22 @@
 
 				<section id="notification">
 					<h2>notification sign-up</h2>
-					
 					<div id="signup">
 						<form>
 							<label for="signup-input">Sign-up for Notifications and Local Alerts</label>
 							<input name="q" class="form-control" placeholder="enter email address..." id="signup-input">
-							<button><span>submit</span> <span>register</span></button>
-							<button>manage</button>
+							<button class="btn">submit + register</button>
+							<button class="btn">manage</button>
 						</form>
 					</div><!-- /#signup -->
-				</section>
-			</div>
+				</section><!-- /#notification -->
+			</div><!-- /.col-md-8 -->
 
-			<section id="calendar" class="col-md-4">
-				<img src="./_assets_/images/calendar.png" alt="Calendar">
-			</section>
+			<div class="col-md-4">
+				<section id="calendar">
+					<img src="./_assets_/images/calendar.png" alt="Calendar">
+				</section><!-- /#calendar -->
+			</div><!-- /.col-md-4 -->
 		</div><!-- /.container -->
 	</section><!-- /#content -->
 
