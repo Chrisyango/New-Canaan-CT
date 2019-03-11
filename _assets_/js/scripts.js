@@ -288,7 +288,26 @@
 
 	// Owl Slider
 	if(typeof $.fn.owlCarousel !== "undefined"){
-		$("#owl-slider").owlCarousel();
+		let newsCount = $('.news-link').length;
+		const newsItem = function(num) {
+			return (newsCount >= num ? num : newsCount);
+		}
+		$("#news-links").owlCarousel({
+			loop: newsCount > 1 ? true : false,
+			responsiveClass: true,
+			nav: true,
+			autoHeight: true,
+			navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
+			margin: 27,
+			responsive: {
+				0: {
+					items: newsItem(1),
+				},
+				1000: {
+					items: newsItem(2)
+				}
+			}
+		});
 	}
 
 	// Preloader

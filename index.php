@@ -127,37 +127,41 @@
 
 	<section id="content">
 		<div class="container">
-			<section id="news">
-				<h2>news stories</h2>
-				<a href="./" class="btn">news archives</a>
-				<div id="news-links" class="owl-carousel">
-					<div class="news-link">
-						<span>november 22, 2018</span>
-						<h3>new canaan article and story description 1</h3>
-						<a href="./">read more</a>
-					</div><!-- /.news-links -->
-					<div class="news-link">
-						<span>november 22, 2018</span>
-						<h3>new canaan article and story description 1</h3>
-						<a href="./">read more</a>
-					</div><!-- /.news-links -->
-				</div><!-- /#news-links -->
-			</section><!-- /#news -->
+			<div class="col-md-8">
+				<section id="news">
+					<div class="clearfix">
+						<h2>news stories</h2>
+						<a href="./" class="btn">news archives</a>
+					</div>
+					<div id="news-links" class="owl-carousel">
+						<div class="news-link">
+							<span>november 22, 2018</span>
+							<h3>new canaan article and story description 1</h3>
+							<a href="./">read more</a>
+						</div><!-- /.news-link -->
+						<div class="news-link">
+							<span>november 22, 2018</span>
+							<h3>new canaan article and story description 2</h3>
+							<a href="./">read more</a>
+						</div><!-- /.news-link -->
+					</div><!-- /#news-links -->
+				</section><!-- /#news -->
 
-			<section id="notification">
-				<h2>notification sign-up</h2>
-				
-				<div id="signup">
-					<form>
-						<label for="signup-input">Sign-up for Notifications and Local Alerts</label>
-						<input name="q" class="form-control" placeholder="enter email address..." id="signup-input">
-						<button><span>submit</span> <span>register</span></button>
-						<button>manage</button>
-					</form>
-				</div><!-- /#signup -->
-			</section>
+				<section id="notification">
+					<h2>notification sign-up</h2>
+					
+					<div id="signup">
+						<form>
+							<label for="signup-input">Sign-up for Notifications and Local Alerts</label>
+							<input name="q" class="form-control" placeholder="enter email address..." id="signup-input">
+							<button><span>submit</span> <span>register</span></button>
+							<button>manage</button>
+						</form>
+					</div><!-- /#signup -->
+				</section>
+			</div>
 
-			<section id="calendar">
+			<section id="calendar" class="col-md-4">
 				<img src="./_assets_/images/calendar.png" alt="Calendar">
 			</section>
 		</div><!-- /.container -->

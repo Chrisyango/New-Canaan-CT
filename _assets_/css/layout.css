@@ -128,21 +128,21 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-.btn{padding:10px 20px;background:#0f99ee;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:900!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:sans-serif;text-transform:uppercase;transition:background .3s}
+.btn{padding:10px 20px;background:#2491b2;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:900!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:sans-serif;text-transform:uppercase;transition:background .3s}
 .button:hover,
 a.button:hover,
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-.btn:hover{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#0e8cda}
+.btn:hover{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#2491b2}
 .button:active,
 a.button:active,
 button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active,
-.btn:active{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#0e8cda}
+.btn:active{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#2491b2}
 button::-moz-focus-inner,
 input::-moz-focus-inner{border:0;padding:0}
 
@@ -302,6 +302,32 @@ a.quick-link {display: inline-block; width: 33.33%; font-size: 24px; line-height
 a.quick-link span {position: relative; top: -11px; left: 22px;}
 
 
+/*--------------- #content ---------------*/
+#content .container {width: 1500px;}
+#content h2 {font-size: 40px; line-height: 32px; letter-spacing: 0.06em; font-weight: 600; color: #252525; text-transform: uppercase;}
+#content .btn {padding: 0; background-color: #fff; color: #464449!important; border: 4px solid #2491b2; border-radius: 25px; font-weight: 300!important;}
+
+
+/*--------------- #news ---------------*/
+#news {padding: 63px 0;}
+#news h2 {position: relative; top: 7px; left: -3px; float: left; margin: 0;}
+#news h2:before {content: ''; position: absolute; top: -32px; left: -77px; width: 468px; height: 50px; background-color:#ddde90; z-index: -1;}
+#news .btn {float: right; font-size: 14px; height: 40px; line-height: 32px; letter-spacing: 0.025em; width: 230px; margin-right: 82px; }
+
+#news-links {top: 41px;}
+#news-links .owl-prev,
+#news-links .owl-next {position: absolute; top: -90px; right: 17px; font-size: 40px; color: #6b777d;}
+#news-links .owl-prev {right: 46px;}
+#news-links .owl-item {padding: 0 0 15px 15px;}
+#news-links .owl-height {height: 115%!important;}
+
+.news-link {position: relative; border-radius: 2px; background-color: #fff; padding:41px 20px 39px 49px; box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.1); margin-top: 15px; margin-right: 15px;}
+.news-link:after {content: ''; position: absolute; top: 15px; left: -15px; width: 100%; height: 100%; background-color: #2491b2; z-index: -1; border-radius: 2px;}
+.news-link span {font-family: 'Miller'; font-size: 18px; line-height: 32px; letter-spacing: 0.005em; color: #2491b2; text-transform: capitalize;}
+.news-link h3 {font-size: 28px; line-height: 38px; font-weight: 600; letter-spacing: 0.005em; color: #252525; text-transform: capitalize; margin: 12px 0;}
+.news-link a {position: relative; font-size: 16px; line-height: 32px; letter-spacing: 0.05em; color: #6b787d; text-transform: uppercase; text-decoration: none; display: inline-block; margin-top: 51px;}
+.news-link a:after {content: '>'; position: absolute; top: -1px; right: -19px;}
+
 /* -----------------------------------------
 
 #inner
@@ -346,7 +372,8 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 .btn-google:hover{border-color:#D34836}
 .btn-reddit:hover{border-color:#ff5700}
 .btn-lg{font-size:16px;padding:14px 30px;border:0;border-radius:3px}
-.floating-share-btn{position:fixed;z-index:99999;top:40%;right:0;height:50px;width:50px;border-radius:0;border:0;background:#F26A39!important;color:#fff!important;line-height:50px;padding:0;box-shadow:0 0 10px rgba(0,0,0,.3);text-align:center}
+.floating-share-btn{position:fixed;z-index:99998;top:40%;right:0;line-height:1.8;border-radius:0;border:0;background:#2491b2!important;color:#fff!important;padding:10px;box-shadow:0 0 10px rgba(0,0,0,.3);text-align:center}
+.floating-share-btn span{display:block}
 
 /* -----------------------------------------
 
