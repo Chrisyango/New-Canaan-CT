@@ -82,12 +82,17 @@
 </header>
 
 <main id="main">
-	<section id="video-wrap" style="background: url('./_assets_/images/hero.jpg') center no-repeat; background-size: cover;">
-		<div id="video-bg" class="player"
-			data-property="{videoURL:'https://www.youtube.com/watch?v=Ghn-B3jmuSA',containment:'#video-bg',startAt:0,mute:false,autoPlay:false,loop:true,opacity:1,showControls:false}">
-		</div>
-		<div id="hero-whitespace" style="background: url('./_assets_/images/hero-whitespace.png') center no-repeat; background-size: cover;"></div>
-	</section><!-- /#slider -->
+	<section id="yt-player">
+		<div class="container">
+			<div id="video-wrap" style="background: url('./_assets_/images/hero.jpg') center no-repeat; background-size: cover;">
+				<div id="video-bg" class="player"
+					data-property="{videoURL:'https://www.youtube.com/watch?v=Ghn-B3jmuSA',containment:'#video-bg',startAt:0,mute:false,autoPlay:false,loop:true,opacity:1,showControls:false}">
+				</div>
+				<div id="hero-whitespace" style="background: url('./_assets_/images/hero-whitespace.png') center no-repeat; background-size: cover;"></div>
+			</div><!-- /#video-wrap -->
+		</div><!-- /.container -->
+	</section><!-- /#yt-player -->
+	
 
 	<section id="quick-links">
 		<div class="container">

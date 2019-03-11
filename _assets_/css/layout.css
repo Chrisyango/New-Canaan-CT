@@ -240,6 +240,9 @@ body{overflow-x:hidden}
 .text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 
+#calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
+
+
 /*--------------- #nav ---------------*/
 header {background-color: #6b777d;}
 header .container {padding: 36px 15px 29px;}
@@ -286,7 +289,9 @@ nav ul {margin: 0; padding: 0;}
 #nav>li>ul li a{display:block}
 
 
-#calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
+/*--------------- #yt-player ---------------*/
+#yt-player {padding: 40px 0;}
+#video-bg {height: 740px!important; padding-bottom: 0!important;}
 
 /* -----------------------------------------
 
