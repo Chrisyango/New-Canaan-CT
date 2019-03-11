@@ -293,6 +293,15 @@ nav ul {margin: 0; padding: 0;}
 #yt-player {padding: 40px 0;}
 #video-bg {height: 740px!important; padding-bottom: 0!important;}
 
+
+/*--------------- #quick-links ---------------*/
+#quick-links {font-size: 0;}
+#quick-links-container {outline: 4px solid #fff; outline-offset: -2px;}
+a.quick-link {display: inline-block; width: 33.33%; font-size: 24px; line-height: 32px; letter-spacing: 0.01em; text-transform: uppercase; text-decoration: none; color: #464449; border: 1px solid rgba(0,0,0,.2); padding: 34px 0px 26px 74px;}
+.quick-link-img {display: inline-block; width: 46px; height: 40px;}
+a.quick-link span {position: relative; top: -11px; left: 22px;}
+
+
 /* -----------------------------------------
 
 #inner

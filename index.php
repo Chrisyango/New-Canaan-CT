@@ -96,30 +96,32 @@
 
 	<section id="quick-links">
 		<div class="container">
-			<a href="./" class="quick-link">
-				<div style="background:url('./_assets_/images/quick-link1.png') center no-repeat;background-size:cover;"></div>
-				recreation
-			</a><!-- /.quick-links -->
-			<a href="./" class="quick-link">
-				<div style="background:url('./_assets_/images/quick-link2.png') center no-repeat;background-size:cover;"></div>
-				online bill pay
-			</a><!-- /.quick-links -->
-			<a href="./" class="quick-link">
-				<div style="background:url('./_assets_/images/quick-link3.png') center no-repeat;background-size:cover;"></div>
-				agendas + minutes
-			</a><!-- /.quick-links -->
-			<a href="./" class="quick-link">
-				<div style="background:url('./_assets_/images/quick-link4.png') center no-repeat;background-size:cover;"></div>
-				forms + documents
-			</a><!-- /.quick-links -->
-			<a href="./" class="quick-link">
-				<div style="background:url('./_assets_/images/quick-link5.png') center no-repeat;background-size:cover;"></div>
-				job opportunities
-			</a><!-- /.quick-links -->
-			<a href="./" class="quick-link">
-				<div style="background:url('./_assets_/images/quick-link6.png') center no-repeat;background-size:cover;"></div>
-				interactive maps
-			</a><!-- /.quick-links -->
+			<div id="quick-links-container">
+				<a href="./" class="quick-link">
+					<div class="quick-link-img" style="background:url('./_assets_/images/quick-link1.png') center no-repeat;background-size:cover;"></div>
+					<span>recreation</span>
+				</a><!-- /.quick-links -->
+				<a href="./" class="quick-link">
+					<div class="quick-link-img" style="background:url('./_assets_/images/quick-link2.png') center no-repeat;background-size:cover;"></div>
+					<span>online bill pay</span>
+				</a><!-- /.quick-links -->
+				<a href="./" class="quick-link">
+					<div class="quick-link-img" style="background:url('./_assets_/images/quick-link3.png') center no-repeat;background-size:cover;"></div>
+					<span>agendas + minutes</span>
+				</a><!-- /.quick-links -->
+				<a href="./" class="quick-link">
+					<div class="quick-link-img" style="background:url('./_assets_/images/quick-link4.png') center no-repeat;background-size:cover;"></div>
+					<span>forms + documents</span>
+				</a><!-- /.quick-links -->
+				<a href="./" class="quick-link">
+					<div class="quick-link-img" style="background:url('./_assets_/images/quick-link5.png') center no-repeat;background-size:cover;"></div>
+					<span>job opportunities</span>
+				</a><!-- /.quick-links -->
+				<a href="./" class="quick-link">
+					<div class="quick-link-img" style="background:url('./_assets_/images/quick-link6.png') center no-repeat;background-size:cover;"></div>
+					<span>interactive maps</span>
+				</a><!-- /.quick-links -->
+			</div><!-- /#quick-links-conatainer -->
 		</div><!-- /.container -->
 	</section><!-- /#quick-links -->
 
