@@ -17,7 +17,7 @@
 	font-family:'Avenir';
 	src:
 		url(../fonts/avenir/Avenir\ Next\ Regular.otf),
-		url(../fonts/avenir/Avenir\ Next\ Medium.otf,)
+		url(../fonts/avenir/Avenir\ Next\ Medium.otf,),
 		url(../fonts/avenir/Avenir\ Next\ Demibold.otf),
 		url(../fonts/avenir/Avenir\ Next\ Bold.otf),
 		url(../fonts/avenir/Avenir\ Next\ Italic.otf);
@@ -202,7 +202,7 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 
 -----------------------------------------*/
 .floating-alert{position:fixed;z-index:99999;bottom:10px;margin:0;right:10px;border:3px solid #fff;background:#000;background:rgba(0,0,0,.9);box-shadow:0 0 10px rgba(0,0,0,.2);color:#fff;padding:30px;font-size:14px;width:350px;}
-.floating-alert h1{color:#ffc140;margin:0 0 10px;font-family:sans-serif;font-weight:bold;text-transform:uppercase;font-size:18px}
+.floating-alert h4{color:#ffc140;margin:0 0 10px;font-family:sans-serif;font-weight:bold;text-transform:uppercase;font-size:18px}
 .floating-alert .btn{padding:8px 10px;margin:20px 0 0 0!important}
 .floating-alert .close{padding:0;background:none!important;color:#fff!important;opacity:1;margin-right:20px}
 
@@ -236,14 +236,44 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 
 -----------------------------------------*/
 body{overflow-x:hidden}
+.container {width: 1470px; max-width: 100%;}
 .text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+
+/*--------------- #nav ---------------*/
+header {background-color: #6b777d;}
+header .container {padding: 36px 15px 29px;}
+#logo {display: block; width: 351px; float: left;}
 #nav-toggle,
 .toggle,
 .toggle2{display:none}
 
-/* Don't forget to accout for span being used in space of a tag for nav items that are not links */
-/*for mega menu addjust as needed*/
-.nav>li>ul {
+#right-nav {float: right;}
+#top-nav {text-align: right; margin-top: 2px;}
+#top-nav div {display: inline-block;}
+
+#weather span:first-of-type {font-family: 'Miller'; font-size: 18px; line-height: 32px; color: #000;}
+#weather i {color: #fff; font-size: 40px; margin-left: 15px; line-height: 0;}
+#weather .forecast {color: #fff; font-size: 17px; margin-left: 13px;}
+
+.social-links {margin-right: 27px;}
+.social-links a {font-size: 20px; text-decoration: none; width: 35px; height: 35px; line-height: 35px; text-align: center; background-color: #464449; color: #6b777d; border-radius: 100%; margin-left: 16px;}
+
+#search {position: relative; width: 280px;}
+#search form {margin: 0;}
+#search label {display: none;}
+#search input {font-family: 'Miller'; font-size: 16px; height: 35px; border-radius: 25px; padding: 0 48px 0 18px; color: #000;}
+#search input::placeholder {font-family: 'Miller'; font-size: 16px; color: #000;}
+#search button {position: absolute; top: 0; right: 0; height: 35px; line-height: 35px; width: 35px; padding: 0; margin: 0; font-size:16px; text-align: center; border-radius: 25px; background-color: #464449;}
+#search button i {opacity: 0.6;}
+
+nav {margin-top: 25px; font-size: 0;}
+nav ul {margin: 0; padding: 0;}
+#nav li {position: relative; display: inline-block; margin: 0;}
+#nav li a {font-size: 18px; line-height: 32px; letter-spacing: 0.025em; padding: 0 27.5px 0 33.5px; text-transform: uppercase; text-decoration: none; color: #fff;}
+#nav>li:not(:last-of-type):after {content: ''; position: absolute; top: 50%; right: 0; transform: translateY(-60%); width: 2px; height: 15px; background-color: rgba(0,0,0,.4);}
+
+#nav>li>ul {
     -moz-column-count: 4;
     -moz-column-gap: 40px;
     -webkit-column-count: 4;
@@ -252,9 +282,9 @@ body{overflow-x:hidden}
     column-gap: 40px;
     padding:40px
 }
-.nav>li>ul li{display:inline-block;width:100%}
-.nav>li>ul li a{display:block}
-/*for mega menu addjust as needed*/
+#nav>li>ul li{display:inline-block;width:100%}
+#nav>li>ul li a{display:block}
+
 
 #calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
 
@@ -393,7 +423,7 @@ body{overflow-x:hidden}
 
 	.floating-alert{width:auto;right:0;left:0;border:0;bottom:0;border-radius:0;padding-left:15px;padding-right:15px}
 	.floating-alert{font-size:12px}
-	.floating-alert h1{margin-bottom:10px;font-size:14px}
+	.floating-alert h4{margin-bottom:10px;font-size:14px}
 	.floating-alert .btn{font-size:10px;padding:7px 12px!important}
 	.share-btns a{height:auto;padding:10px;width:100%;font-size:12px;white-space:nowrap;overflow:hidden}
 	.share-btns i{display:block;line-height:50px!important;font-size:20px}

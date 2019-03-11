@@ -37,9 +37,9 @@
 </head>
 <body id="homepage">
 
-<header>
+<header class="clearfix">
 	<div class="container">
-		<a href="./" class="logo">
+		<a href="./" id="logo">
 			<img src="./_assets_/images/logo.png" alt="Logo">
 		</a><!-- /.logo -->
 
@@ -47,35 +47,37 @@
 			<div id="nav-toggle" class="fa fa-bars"></div>
 		</div><!-- /#toggles -->
 
-		<div id="top-nav">
-			<div class="weather hidden-sm hidden-xs">
-				<div id="weather"></div><!-- /#weather -->
-			</div><!-- /.weather -->
+		<div id="right-nav">
+			<div id="top-nav">
+				<div class="weather hidden-sm hidden-xs">
+					<div id="weather"></div><!-- /#weather -->
+				</div><!-- /.weather -->
 
-			<div class="social-links">
-				<a href="./" class="fa fa-twitter"></a>
-				<a href="./" class="fa fa-facebook"></a>
-			</div><!-- /.social-links -->
+				<div class="social-links">
+					<a href="./" class="fa fa-twitter"></a>
+					<a href="./" class="fa fa-facebook"></a>
+				</div><!-- /.social-links -->
 
-			<div id="search">
-				<form class="search-form" method="get" action="search.php">
-					<label class="fa fa-search" for="search-input"></label>
-					<input name="q" class="form-control search-input" placeholder="Enter search terms..." type="search" id="search-input">
-					<button>search<i class="fa fa-search"></i></button>
-				</form><!-- /.search-form -->
-			</div><!-- /#search -->
-		</div><!-- /#top-nav -->
+				<div id="search">
+					<form class="search-form" method="get" action="search.php">
+						<label class="fa fa-search" for="search-input"></label>
+						<input name="q" class="form-control search-input" placeholder="Type to Search" type="search" id="search-input">
+						<button><i class="fa fa-search"></i></button>
+					</form><!-- /.search-form -->
+				</div><!-- /#search -->
+			</div><!-- /#top-nav -->
 
-		<nav>
-			<ul id="nav">
-				<li><a href="./">community</a></li>
-				<li><a href="./">government</a></li>
-				<li><a href="./">departments</a></li>
-				<li><a href="./">services</a></li>
-				<li><a href="./">schools</a></li>
-				<li><a href="./">how do i...</a></li>
-			</ul> <!-- /#nav -->
-		</nav>
+			<nav>
+				<ul id="nav">
+					<li><a href="./">community</a></li>
+					<li><a href="./">government</a></li>
+					<li><a href="./">departments</a></li>
+					<li><a href="./">services</a></li>
+					<li><a href="./">schools</a></li>
+					<li><a href="./">how do i...</a></li>
+				</ul> <!-- /#nav -->
+			</nav>
+		</div><!-- /#right-nav -->
 	</div><!-- /.container -->
 </header>
 
@@ -144,8 +146,8 @@
 						<input name="q" class="form-control" placeholder="enter email address..." id="signup-input">
 						<button><span>submit</span> <span>register</span></button>
 						<button>manage</button>
-					</form><!-- /.search-form -->
-				</div><!-- /#search -->
+					</form>
+				</div><!-- /#signup -->
 			</section>
 
 			<section id="calendar">

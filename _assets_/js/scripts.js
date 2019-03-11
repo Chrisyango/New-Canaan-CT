@@ -204,8 +204,7 @@
 			success: function(weather) {
 				var date = new Date();
 				date = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
-				var html = '<span>'+date+'</span> <span class="forecast">'+weather.temp+'&deg; '+weather.forecast+'</span>';
-				html += '<i class="'+weather.icon+'"></i>';
+				var html = '<span>Weather:</span> <i class="'+weather.icon+'"></i> <span class="forecast">'+weather.temp+'&deg;</span>';
 
 				$("#weather").html(html);
 			},
