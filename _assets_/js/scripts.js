@@ -322,6 +322,43 @@
 
 	$window.ready(function(){
 
+		if ($('#side-content').length){
+			$('main').css('position','relative');
+			$('<div id="side-background" class="hidden-sm hidden-xs"></div>').prependTo('main');
+		}
+
+		function sideBackground(){
+			$('#side-background').width($('#side-content').outerWidth());
+		}
+		sideBackground();
+		$window.resize(sideBackground);
+
+		// Fill sides script
+		function fillSide(){
+			var windowWidth = $('body').outerWidth();
+			var pixelValue = (windowWidth - $('.container').width()) / 2;
+			$('.fillLeft').css({
+					'margin-left': -pixelValue
+			});
+			
+			$('.fillRight').css({
+					'margin-right': -pixelValue
+			});
+			$('.fillLeft.withPadding').css({
+					'margin-left': -pixelValue,
+					'padding-left': pixelValue
+			});
+			
+			$('.fillRight.withPadding').css({
+					'margin-right': -pixelValue,
+					'padding-right': pixelValue
+			});
+			
+			$('#side-background').width($('#side-content').outerWidth());
+		}
+		fillSide();
+		$window.resize(fillSide);
+
 		// Social Feed
 		if ( typeof $.fn.socialfeed !== "undefined"){
 			$('#social-feed').socialfeed({

@@ -123,7 +123,7 @@
 					<div class="quick-link-img" style="background:url('./_assets_/images/quick-link6.png') center no-repeat;background-size:cover;"></div>
 					<span>interactive maps</span>
 				</a><!-- /.quick-links -->
-			</div><!-- /#quick-links-conatainer -->
+			</div><!-- /#quick-links-container -->
 		</div><!-- /.container -->
 	</section><!-- /#quick-links -->
 

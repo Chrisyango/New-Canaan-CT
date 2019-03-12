@@ -16,25 +16,38 @@
 @font-face{
 	font-family:'Avenir';
 	src:
-		url(../fonts/avenir/Avenir\ Next\ Regular.otf),
-		url(../fonts/avenir/Avenir\ Next\ Demibold.otf),
-		url(../fonts/avenir/Avenir\ Next\ Bold.otf),
-		url(../fonts/avenir/Avenir\ Next\ Italic.otf);
+		url(../fonts/avenir/avenir-next-regular.woff) format("woff"),
+		url(../fonts/avenir/AvenirNext-Regular.woff2) format("woff2");
 }
 @font-face{
 	font-family:'Avenir-Med';
-	src:url(../fonts/avenir/Avenir\ Next\ Medium.otf,);
+	src:
+		url(../fonts/avenir/avenir_next_medium.woff) format("woff"),
+		url(../fonts/avenir/AvenirNext-Medium.woff2) format("woff2");
+}
+@font-face{
+	font-family:'Avenir-Demi';
+	src:
+		url(../fonts/avenir/avenir-next-demibold.woff) format("woff"),
+		url(../fonts/avenir/avenir-next-demibold.woff2) format("woff2");
+}
+@font-face{
+	font-family:'Avenir-Bold';
+	src:
+		url(../fonts/avenir/avenir-next-bold.woff) format("woff"),
+		url(../fonts/avenir/AvenirNext-Bold.woff2) format("woff2");
 }
 @font-face{
 	font-family: 'Gotham';
 	src: 
-		url(../fonts/gotham/Gotham\ Bold.otf),
-		url(../fonts/gotham/Gotham\ Book.otf);
+		url(../fonts/gotham/Gotham\ Bold.woff) format("woff"),
+		url(../fonts/gotham/Gotham-Bold.woff2) format("woff2");
 }
 @font-face{
 	font-family: 'Miller';
 	src:
-		url(../fonts/miller/Miller\ Italic.otf);
+		url(../fonts/miller/MillerDisplay-Italic.woff) format("woff"),
+		url(../fonts/miller/Miller-DisplayItalic.woff2) format("woff2");
 }
 body{background:#fff;font-size:14px;line-height:1.6;font-family:'Avenir',sans-serif;color:#444;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
 
@@ -51,8 +64,8 @@ h3{font-size:28px}
 h4{font-size:21px}
 h5{font-size:16px}
 h6{font-size:14px}
-.header{font-size:28px;color:#111;margin-bottom:30px}
-.subheader{font-size:21px;color:#111;margin-bottom:30px}
+.header{position: relative; font-family: 'Avenir-Demi'; font-size:40px; line-height: 32px; letter-spacing: 0.025em; color:#252525; display: block; margin-bottom:36px; text-transform: uppercase;}
+.subheader{font-family: 'Avenir-Med'; font-size:40px; line-height: 32px; letter-spacing: 0.025em; color:#6b777d; display: block; margin: 89px 0 38px; text-transform: uppercase;}
 p{margin:0 0 30px 0}
 em{font-style:italic}
 strong,b{font-weight:bold}
@@ -274,7 +287,7 @@ header .container {padding: 36px 15px 29px;}
 nav {font-size: 0;}
 nav ul {margin: 0; padding: 0;}
 #nav li {position: relative; display: inline-block; margin: 0;}
-#nav li a {display: inline-block; width: 100%; font-size: 18px; line-height: 32px; letter-spacing: 0.025em; padding: 0 27.5px 0 33.5px; text-transform: uppercase; text-decoration: none; color: #fff;}
+#nav li a {font-family: 'Avenir-Med'; display: inline-block; width: 100%; font-size: 18px; line-height: 32px; letter-spacing: 0.025em; padding: 0 26.5px 0 33.5px; text-transform: uppercase; text-decoration: none; color: #fff;}
 
 #nav>li>ul {
     -moz-column-count: 4;
@@ -298,25 +311,27 @@ nav ul {margin: 0; padding: 0;}
 #quick-links {font-size: 0;}
 #quick-links-container {outline: 4px solid #fff; outline-offset: -2px;}
 a.quick-link {display: inline-block; width: 33.33%; font-size: 24px; line-height: 32px; letter-spacing: 0.01em; text-transform: uppercase; text-decoration: none; color: #464449; border: 1px solid rgba(0,0,0,.2); padding: 34px 70px 26px 74px;}
-.quick-link-img {display: inline-block; width: 46px; height: 40px;}
+a.quick-link:hover {color: #fff; background-color: #2491b2;}
+a.quick-link:hover .quick-link-img {filter: invert(50%) sepia(30%) saturate(444%) hue-rotate(175deg) brightness(45%) contrast(85%);}
+.quick-link-img {display: inline-block; width: 50px; height: 40px;}
 a.quick-link span {position: relative; top: -11px; left: 22px;}
 
 
 /*--------------- #content ---------------*/
 #content .container {width: 1500px;}
-#content h2 {position: relative; top: 7px; left: -3px; font-size: 40px; line-height: 32px; letter-spacing: 0.06em; font-weight: 600; color: #252525; text-transform: uppercase; margin: 0;}
+#content h2 {position: relative; top: 7px; left: -3px; font-family: 'Avenir-Demi'; font-size: 40px; line-height: 32px; letter-spacing: 0.05em; color: #252525; text-transform: uppercase; margin: 0;}
 #content .btn {padding: 0; background-color: #fff; color: #464449!important; border: 4px solid #2491b2; border-radius: 25px; font-weight: 300!important;}
 
 
 /*--------------- #news ---------------*/
-#news {padding: 63px 0;}
+#news {padding: 65px 0;}
 #news h2 {float: left;}
 #news h2:before {content: ''; position: absolute; top: -32px; left: -77px; width: 468px; height: 50px; background-color:#ddde90; z-index: -1;}
 #news .btn {float: right; font-size: 14px; height: 40px; line-height: 32px; letter-spacing: 0.025em; width: 230px; margin-right: 82px; }
 
 #news-links {top: 41px;}
 #news-links .owl-prev,
-#news-links .owl-next {position: absolute; top: -90px; right: 17px; font-size: 40px; color: #6b777d;}
+#news-links .owl-next {position: absolute; top: -92px; right: 17px; font-size: 40px; color: #6b777d;}
 #news-links .owl-prev {right: 46px;}
 #news-links .owl-item {padding: 0 0 15px 15px;}
 #news-links .owl-height {height: 115%!important;}
@@ -324,13 +339,13 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 .news-link {position: relative; border-radius: 2px; background-color: #fff; padding:41px 20px 39px 49px; box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.1); margin-top: 15px; margin-right: 15px;}
 .news-link:after {content: ''; position: absolute; top: 15px; left: -15px; width: 100%; height: 100%; background-color: #2491b2; z-index: -1; border-radius: 2px;}
 .news-link span {font-family: 'Miller'; font-size: 18px; line-height: 32px; letter-spacing: 0.005em; color: #2491b2; text-transform: capitalize;}
-.news-link h3 {font-size: 28px; line-height: 38px; font-weight: 600; letter-spacing: 0.005em; color: #252525; text-transform: capitalize; margin: 12px 0;}
+.news-link h3 {font-family: 'Avenir-Demi'; font-size: 28px; line-height: 38px; letter-spacing: 0.005em; color: #252525; text-transform: capitalize; margin: 12px 0;}
 .news-link a {position: relative; font-size: 16px; line-height: 32px; letter-spacing: 0.05em; color: #6b787d; text-transform: uppercase; text-decoration: none; display: inline-block; margin-top: 51px;}
 .news-link a:after {content: '>'; position: absolute; top: -1px; right: -19px;}
 
 
 /*--------------- #notification ---------------*/
-#notification {padding: 84px 0 94px;}
+#notification {padding: 82px 0 94px;}
 #notification h2:before {content: ''; position: absolute; top: -32px; left: -77px; width: 650px; height: 50px; background-color: #ddde90; z-index: -1;}
 
 #signup {margin: 77px 20px;}
@@ -349,7 +364,7 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 #connect {position: relative; background-color: #6c777d; padding: 60px 0 47px;}
 #connect .container {width: 1370px;}
 #connect .overlay {position: absolute; top: -3px; right: 256px; width: 595px; height: 601px; opacity: 0.1;}
-#connect h2 {float: left; font-size: 40px; line-height: 32px; letter-spacing: 0.025em; font-weight: 600; text-transform: uppercase; color: #fff;}
+#connect h2 {float: left; font-family: 'Avenir-Demi'; font-size: 40px; line-height: 32px; letter-spacing: 0.025em; text-transform: uppercase; color: #fff;}
 #filter {float: right; font-size: 0; margin: 17px 1px 0 0;}
 #filter a {font-size: 16px; line-height: 32px; letter-spacing: 0.05em; color: #ddde90; text-transform: uppercase; margin-right: 32px;}
 #filter span {position: relative; font-size: 16px; line-height: 32px; letter-spacing: 0.05em; color: #c2c2c2; text-transform: uppercase; margin: 0 4px 0 29px;}
@@ -366,11 +381,11 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 .social-feed-element:last-of-type {margin: 0;}
 .social-img {height: 205px; text-align: center;}
 .social-img img {height: 100%; border-radius: 2px 2px 0 0}
-.social-feed-text {font-size: 20px; line-height: 30px; font-weight: 600; text-transform: capitalize; color: #252525; margin: 0; padding: 33px 30px;}
+.social-feed-text {font-family: 'Avenir-Demi'; font-size: 20px; line-height: 30px; text-transform: capitalize; color: #252525; margin: 0; padding: 33px 30px;}
 
 
 /*--------------- #footer-links ---------------*/
-#footer-links {position: relative; padding: 53px 0 51px; background-color: #6b777d; box-shadow: 0 -10px 40px 5px rgba(0,0,0,.1);}
+#footer-links {position: relative; padding: 52px 0; background-color: #6b777d; box-shadow: 0 -10px 40px 5px rgba(0,0,0,.1);}
 
 #left-links {float: left;}
 #footer-nav a {position: relative; font-size: 18px; line-height: 32px; letter-spacing: 0.05em; color: #fff; text-transform: uppercase; text-decoration: none; margin-right: 65px;}
@@ -383,7 +398,7 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 #contact-info span:not(:last-of-type):after {content: ''; position: absolute; top: 50%; right: -38px; transform: translateY(-50%); width: 3px; height: 20px; background-color: rgba(0,0,0,.6);}
 
 #right-links {float: right; margin-right: 20px; margin-top: 7px;}
-#right-links>a {font-size: 18px; line-height: 18px; letter-spacing: 0.075em; font-weight: 700; color: #fff; text-transform: uppercase; text-decoration: none; border-bottom: 2px solid #b5bbbe; display: block;}
+#right-links>a {font-family: 'Avenir-Bold'; font-size: 18px; line-height: 18px; letter-spacing: 0.05em; color: #fff; text-transform: uppercase; text-decoration: none; border-bottom: 2px solid #b5bbbe; display: block;}
 #right-links>a:last-of-type {color: #252525; border-bottom: 2px solid #252525; display: inline-block; position: relative; top: -5px;}
 #right-links .social-links {display: inline-block; margin: 24px 20px 0 0;}
 #right-links .social-links a {background-color: #ddde90; color: #6b777d;}
@@ -400,19 +415,44 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 #inner
 
 -----------------------------------------*/
+#freeform main {position: relative;}
+#freeform header .container {padding: 39px 15px 29px;}
+
+#breadcrumbs{font-size:13px;text-transform:capitalize}
+#breadcrumbs p{margin:0}
+#breadcrumbs a{text-decoration:none}
+#breadcrumbs i{font-size:13px;margin:0 4px}
+
+/*--------------- #slider ---------------*/
+#freeform #slider {height: 578px; margin-top: 40px; box-shadow: 0 0 30px 5px rgba(0,0,0,.1); border-radius: 2px;}
+
+/*--------------- #quick-links ---------------*/
+#freeform #quick-links {padding: 17px 0;}
+#freeform #quick-links-container {padding: 0; margin-top: 23px;}
+#freeform a.quick-link {width: 50%; padding: 34px 50px 26px 97px;}
+#freeform #quick-links h2 {font-family: 'Avenir-Bold'; font-size: 32px; line-height: 32px; letter-spacing: 0.015em; color: #252525; text-transform: uppercase; padding: 0;}
+
+/*--------------- #entry ---------------*/
+.header:before {content: ''; position: absolute; top: -31px; left: -80px; width: 433px; height: 50px; background-color: #ddde90; z-index: -1;}
+#entry {padding: 67px 10px 95px 0;}
+#post p {font-size: 16px; line-height: 32px; letter-spacing: 0.005em; color: #000; margin-bottom: 32px;}
+#post ul {padding: 0; margin: 41px 0 0 18px; list-style-type: none;}
+#post ul li:before {content: '\2022'; color: #2491b2; font-weight: 700; display: inline-block; width: 1em; margin-left: -1.2em;}
+#post ul li a {font-family: 'Avenir-Med'; font-size: 20px; line-height: 32px; letter-spacing: 0.025em; color:#2491b2; text-decoration: none; text-transform: capitalize; display: inline-block; margin-left: -5px; margin-bottom: 11px;}
+
+/*--------------- #flyout ---------------*/
+#side-content {background-color: #2491b2; margin-top: 25px; margin-left: 31px; padding: 47px 0 47px 39px;}
+#side-background {position: absolute; top: 25px; right: 0; bottom: 0; width: 390px; background-color: #2491b2;}
 #flyout{margin:0;padding:0}
-#flyout li{margin:0;display:block;position:relative}
+#flyout ul {margin: 20px 0 0 2px; padding: 0;}
+#flyout li{margin:0;display:block;position:relative; font-family: 'Avenir-Med'; font-size: 24px; letter-spacing: 0.025em; color: #ddde90; text-transform: uppercase;}
+#flyout>li {margin-bottom: 53px;}
 #flyout a,
-#flyout span{text-decoration:none;padding:15px 20px;display:block;border-bottom:1px solid #000}
-#flyout ul{display:none;position:absolute;top:0;left:100%;margin:0;padding:0;background:#aaa}
+#flyout span{text-decoration:none;display:inline-block;}
 #flyout ul a,
-#flyout ul span{font-size:13px;padding:10px 15px;width:180px}
+#flyout ul span{font-family: 'Avenir-Med'; font-size: 18px; letter-spacing: 0.025em; text-transform: capitalize; color: #fff; border-bottom: 2px solid #fff;}
 #flyout li:hover > ul{display:block}
 
-.breadcrumbs{font-size:13px;text-transform:capitalize}
-.breadcrumbs p{margin:0}
-.breadcrumbs a{text-decoration:none}
-.breadcrumbs i{font-size:13px;margin:0 4px}
 
 /* -----------------------------------------
 
@@ -488,7 +528,7 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#flyout,#nav{display:block!important}
 
 	/*--------------- #nav ---------------*/
-	nav {margin-top: 25px;}
+	nav {margin-top: 23px;}
 	#logo {float:left;}
 	#right-nav {float: right;}
 	#top-nav div {display: inline-block;}
@@ -498,7 +538,7 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#video-bg {height: 740px!important; padding-bottom: 0!important;}
 
 	/*--------------- #calendar ---------------*/
-	#calendar {padding: 63px 0 63px 63px;}
+	#calendar {padding: 65px 0 65px 63px;}
 }
 
 @media only screen and (max-width:1440px) {
@@ -674,7 +714,7 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 
 	/*--------------- footer ---------------*/
 	footer {font-size: 11px;}
-	footer a {font-size: 12px;}
+	footer a {font-size: 13px;}
 
 }
 
