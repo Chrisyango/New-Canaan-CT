@@ -303,7 +303,7 @@
 				0: {
 					items: newsItem(1),
 				},
-				1000: {
+				767: {
 					items: newsItem(2)
 				}
 			}

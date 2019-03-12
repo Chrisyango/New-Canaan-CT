@@ -342,7 +342,6 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 
 
 /*--------------- #calendar ---------------*/
-#calendar {padding: 63px 0 0 63px;}
 #calendar img {width: 370px;}
 
 
@@ -488,13 +487,18 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#flyout .focused .toggle,#nav .focused .toggle2{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 	#flyout,#nav{display:block!important}
 
+	/*--------------- #nav ---------------*/
 	nav {margin-top: 25px;}
 	#logo {float:left;}
 	#right-nav {float: right;}
 	#top-nav div {display: inline-block;}
 	#nav>li:not(:last-of-type):after {content: ''; position: absolute; top: 50%; right: 0; transform: translateY(-60%); width: 2px; height: 15px; background-color: rgba(0,0,0,.4);}
 
+	/*--------------- #ytplayer ---------------*/
 	#video-bg {height: 740px!important; padding-bottom: 0!important;}
+
+	/*--------------- #calendar ---------------*/
+	#calendar {padding: 63px 0 63px 63px;}
 }
 
 @media only screen and (max-width:1440px) {
@@ -515,6 +519,22 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	/*--------------- #quick-links ---------------*/
 	a.quick-link {padding: 30px 20px; font-size: 20px;}
 	.quick-link img {width: 40px; height: 34px;}
+
+	/*--------------- #content ---------------*/
+	#content h2 {font-size: 36px;}
+	#news h2:before {width: 395px;}
+	#notification h2:before {width: 570px;}
+
+	#news .btn {width: 200px;}
+	.news-link span {font-size: 16px;}
+	.news-link h3 {font-size: 24px;}
+	.news-link a {font-size: 14px;}
+
+	#signup {margin: 45px 20px;}
+	#signup label {font-size: 22px;}
+	#signup input {height: 50px; font-size: 14px;}
+	#signup input::placeholder {font-size: 14px;}
+	#signup .btn {width: 200px;}
 }
 
 @media only screen and (max-width:1040px) {
@@ -570,8 +590,16 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#flyout ul span{width:100%}
 	#flyout li:hover > ul{display:none}
 
-	/*--------------- #yt-player ---------------*/
-	/* #video-bg {height: unset!important;} */
+	/*--------------- #content ---------------*/
+	.news-link {padding: 30px 20px 30px 30px;}
+	.news-link a {margin-top: 15px;}
+
+	#notification {padding-bottom: 0;}
+	#signup {margin: 30px 15px;}
+	#signup input {padding: 0 15px;}
+
+	/*--------------- #calendar ---------------*/
+	#calendar {padding: 50px 0;}
 
 }
 
@@ -588,6 +616,22 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	/*--------------- #quick-links ---------------*/
 	a.quick-link {width: 100%; padding-left: 25%;}
 
+	/*--------------- #content ---------------*/
+	#content h2 {font-size: 32px;}
+	#news h2:before {width: 355px;}
+	#notification h2:before {width: 510px;}
+	#news h2,
+	#news .btn {float: none;}
+	#news .btn {margin-top: 30px; font-size: 13px;}
+	#news-links {top: 30px; width: calc(100% - 30px); margin: 0 auto;}
+	#news-links .owl-prev,
+	#news-links .owl-next {top: 50%; transform: translateY(-50%); right: -30px;}
+	#news-links .owl-prev {right: unset; left: -30px;}
+
+	#signup label {font-size: 20px;}
+	#signup input {height: 40px;}
+	#signup .btn {font-size: 13px;}
+
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -601,6 +645,22 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 
 	/*--------------- #quick-links ---------------*/
 	a.quick-link {padding-left: 30px;}
+
+	/*--------------- #content ---------------*/
+	#content h2 {font-size: 28px;}
+	#news h2:before {top: -20px; width: 320px; height: 35px;}
+	#notification h2:before {top: -20px; width: 450px; height: 35px; overflow:hidden;}
+	#news h2,
+	#news .btn {float: none;}
+	#news .btn {font-size: 12px; width: 160px;}
+	.news-link span {font-size: 15px;}
+	.news-link h3 {font-size: 22px; line-height: 28px;}
+	.news-link a {font-size: 13px;}
+
+	#signup label {font-size: 18px;}
+	#signup input {font-size: 13px;}
+	#signup .btn {font-size: 12px; width: 170px;}
+	#signup .btn:last-of-type {width: 110px;}
 }
 
 @media print {
