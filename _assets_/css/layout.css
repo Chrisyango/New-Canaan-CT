@@ -693,6 +693,9 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	footer {font-size: 12px;}
 	footer a {font-size: 14px;}
 
+	/*--------------- #slider ---------------*/
+	#freeform #slider {height: 450px;}
+
 	/*--------------- #entry ---------------*/
 	#entry {padding: 50px 10px 0 0;}
 	#post ul li a {font-size: 18px;}
