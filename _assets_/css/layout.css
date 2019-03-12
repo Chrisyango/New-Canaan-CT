@@ -297,7 +297,7 @@ nav ul {margin: 0; padding: 0;}
 /*--------------- #quick-links ---------------*/
 #quick-links {font-size: 0;}
 #quick-links-container {outline: 4px solid #fff; outline-offset: -2px;}
-a.quick-link {display: inline-block; width: 33.33%; font-size: 24px; line-height: 32px; letter-spacing: 0.01em; text-transform: uppercase; text-decoration: none; color: #464449; border: 1px solid rgba(0,0,0,.2); padding: 34px 0px 26px 74px;}
+a.quick-link {display: inline-block; width: 33.33%; font-size: 24px; line-height: 32px; letter-spacing: 0.01em; text-transform: uppercase; text-decoration: none; color: #464449; border: 1px solid rgba(0,0,0,.2); padding: 34px 70px 26px 74px;}
 .quick-link-img {display: inline-block; width: 46px; height: 40px;}
 a.quick-link span {position: relative; top: -11px; left: 22px;}
 
@@ -511,6 +511,10 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#search button {font-size: 14px; height: 30px; line-height: 30px; width: 30px;}
 
 	#nav li a {font-size: 16px; padding: 0 10px;}
+
+	/*--------------- #quick-links ---------------*/
+	a.quick-link {padding: 30px 20px; font-size: 20px;}
+	.quick-link img {width: 40px; height: 34px;}
 }
 
 @media only screen and (max-width:1040px) {
@@ -520,6 +524,9 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 
 	.social-links {margin-right: 15px;}
 	.social-links a {margin-left: 10px;}
+
+	/*--------------- #quick-links ---------------*/
+	a.quick-link {width: 50%;}
 }
 
 @media only screen and (max-width:991px) {
@@ -578,6 +585,9 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	.share-btns a{height:auto;padding:10px;width:100%;font-size:12px;white-space:nowrap;overflow:hidden}
 	.share-btns i{display:block;line-height:50px!important;font-size:20px}
 
+	/*--------------- #quick-links ---------------*/
+	a.quick-link {width: 100%; padding-left: 25%;}
+
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -585,7 +595,12 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width:479px) {
+
+	/*--------------- #nav ---------------*/
 	#logo {width: 200px;}
+
+	/*--------------- #quick-links ---------------*/
+	a.quick-link {padding-left: 30px;}
 }
 
 @media print {
