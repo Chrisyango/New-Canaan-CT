@@ -143,7 +143,7 @@
 					<div id="flyout-wrap">
 						<ul id="flyout">
 							<li>
-								health related sites:
+								<a href="./">health related sites:</a>
 								<ul>
 									<li><a href="./">zika virus information & links</a></li>
 									<li><a href="./">well water info</a></li>
@@ -152,7 +152,7 @@
 								</ul>
 							</li>
 							<li>
-								state of connecticut sites:
+								<a href="./">state of connecticut sites:</a>
 								<ul>
 									<li><a href="./">connecticut state department of health</a></li>
 									<li><a href="./">department of consumer protection</a></li>
@@ -161,7 +161,7 @@
 								</ul>
 							</li>
 							<li>
-								state of connecticut sites:
+								<a href="./">state of connecticut sites:</a>
 								<ul>
 									<li><a href="./">center for disease control</a></li>
 									<li><a href="./">environmental protection agency</a></li>
@@ -170,7 +170,7 @@
 								</ul>
 							</li>
 							<li>
-								state of connecticut sites:
+								<a href="./">state of connecticut sites:</a>
 								<ul>
 									<li><a href="./">world health organization</a></li>
 									<li><a href="./">pan american health organization</a></li>

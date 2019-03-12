@@ -444,11 +444,10 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 #side-content {background-color: #2491b2; margin-top: 25px; margin-left: 31px; padding: 47px 0 47px 39px;}
 #side-background {position: absolute; top: 25px; right: 0; bottom: 0; width: 390px; background-color: #2491b2;}
 #flyout{margin:0;padding:0}
-#flyout ul {margin: 20px 0 0 2px; padding: 0;}
-#flyout li{margin:0;display:block;position:relative; font-family: 'Avenir-Med'; font-size: 24px; letter-spacing: 0.025em; color: #ddde90; text-transform: uppercase;}
-#flyout>li {margin-bottom: 53px;}
+#flyout ul {margin: 0; padding: 0;}
+#flyout li{margin-bottom: 7px;display:block;position:relative;}
 #flyout a,
-#flyout span{text-decoration:none;display:inline-block;}
+#flyout span{font-family: 'Avenir-Med'; font-size: 24px; letter-spacing: 0.025em; color: #ddde90; text-transform: uppercase; text-decoration:none;display:inline-block;}
 #flyout ul a,
 #flyout ul span{font-family: 'Avenir-Med'; font-size: 18px; letter-spacing: 0.025em; text-transform: capitalize; color: #fff; border-bottom: 2px solid #fff;}
 #flyout li:hover > ul{display:block}
@@ -527,6 +526,9 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#flyout .focused .toggle,#nav .focused .toggle2{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 	#flyout,#nav{display:block!important}
 
+	#flyout ul {margin: 28px 0 0 2px; }
+	#flyout>li {margin-bottom: 52px;}
+
 	/*--------------- #nav ---------------*/
 	nav {margin-top: 23px;}
 	#logo {float:left;}
@@ -585,6 +587,27 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#right-links {margin-right: 0;}
 	#right-links>a {font-size: 16px;}
 
+	/*--------------- #entry ---------------*/
+	.header,
+	.subheader {font-size: 36px;}
+	.header:before {width: 350px;}
+
+	/*--------------- #flyout ---------------*/
+	#flyout li a {font-size: 20px;}
+	#flyout ul a,
+	#flyout ul span {font-size: 16px; margin-bottom: 5px;}
+
+}
+
+@media only screen and (max-width:1280px) {
+
+	/*--------------- #quick-links ---------------*/
+	#freeform #quick-links h2 {font-size: 26px;}
+	#freeform a.quick-link {padding: 25px}
+
+	
+
+	
 }
 
 @media only screen and (max-width:1040px) {
@@ -624,7 +647,7 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#nav ul span{width:100%}
 	#nav ul ul{left:0}
 	#nav .toggle,
-	#nav .toggle2{position:absolute;right:0;top:0;background:rgba(0,0,0,.2);height:55px;width:55px;line-height:55px;text-align:center}
+	#nav .toggle2{position:absolute;right:0;top:0;background:rgba(0,0,0,.2);height:45px;width:45px;line-height:45px;text-align:center}
 	#nav li li:hover > a{background:none;color:#fff}
 
 	#search {display: none; position: absolute; top: calc(100% + 5px); right: 15px; z-index: 100;}
@@ -632,14 +655,18 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#search-toggle,
 	#nav-toggle{line-height:45px;width:45px;text-align:center;border:1px solid rgba(255,255,255,.15);cursor:pointer;font-size:20px;color:#fff;border-radius:4px;margin-left:5px; margin-top: 5px;}
 
+	#side-content {margin-left: -15px; padding: 15px}
 	#flyout{display:none}
-	#flyout li{}
+	#flyout li{margin: 0;}
 	#flyout li a,
-	#flyout li span{padding:20px 30px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px}
-	#flyout ul{position:static;left:0;padding:0;background:rgba(0,0,0,.2)}
+	#flyout li span{position: relative;display:inline-block;width:100%;padding:15px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px}
+	#flyout ul{display: none; position:static;left:0;padding:0;background:rgba(0,0,0,.2)}
 	#flyout ul a,
-	#flyout ul span{width:100%}
+	#flyout ul span{margin-bottom: 0;}
 	#flyout li:hover > ul{display:none}
+	#flyout-toggle {font-size: 18px;color: #ddde90;}
+	#flyout .toggle,
+	#flyout .toggle2 {position: absolute; top: 0; background:rgba(0,0,0,.2);right: 0;height:45px;width:45px;line-height:45px;text-align:center}
 
 	/*--------------- #content ---------------*/
 	.news-link {padding: 30px 20px 30px 30px;}
@@ -666,6 +693,10 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	footer {font-size: 12px;}
 	footer a {font-size: 14px;}
 
+	/*--------------- #entry ---------------*/
+	#entry {padding: 50px 10px 0 0;}
+	#post ul li a {font-size: 18px;}
+
 }
 
 	/* All Mobile Sizes (devices and browser) */
@@ -678,10 +709,17 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	.share-btns a{height:auto;padding:10px;width:100%;font-size:12px;white-space:nowrap;overflow:hidden}
 	.share-btns i{display:block;line-height:50px!important;font-size:20px}
 
+	#flyout-toggle {font-size: 16px;}
+
 	/*--------------- #quick-links ---------------*/
-	a.quick-link {width: 100%; padding-left: 25%;}
+	#freeform a.quick-link,
+	a.quick-link {width: 100%; padding-left: 25%; font-size: 18px;}
+	.quick-link-img {width: 40px; height: 32px;}
+	#freeform #quick-links h2 {font-size: 22px;}
 
 	/*--------------- #content ---------------*/
+	.header,
+	.subheader,
 	#content h2 {font-size: 32px;}
 	#news h2:before {width: 355px;}
 	#notification h2:before {width: 510px;}
@@ -716,6 +754,10 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	footer {font-size: 11px;}
 	footer a {font-size: 13px;}
 
+	/*--------------- #entry ---------------*/
+	#post p {font-size: 14px;}
+	#post ul li a {font-size: 16px;}
+
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -728,9 +770,12 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#logo {width: 200px;}
 
 	/*--------------- #quick-links ---------------*/
+	#freeform a.quick-link,
 	a.quick-link {padding-left: 30px;}
 
 	/*--------------- #content ---------------*/
+	.header,
+	.subheader,
 	#content h2 {font-size: 28px;}
 	#news h2:before {top: -20px; width: 320px; height: 35px;}
 	#notification h2:before {top: -20px; width: 450px; height: 35px; overflow:hidden;}
