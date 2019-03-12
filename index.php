@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="_assets_/css/animate.min.css">
 	<link rel="stylesheet" href="_assets_/plugins/owl.carousel/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="_assets_/css/jquery.mb.YTPlayer.min.css" media="all" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700">
 	<link rel="stylesheet" href="_assets_/css/layout.css">
 
 	<link rel="shortcut icon" href="_assets_/images/favicon.ico">
@@ -170,23 +171,28 @@
 
 	<section id="connect">
 		<div class="container">
-			<h2>connect with us</h2>
-			<div>
-				<a href="./">@townofnewcanaan</a>
-				<ul id="tabs">
-					<li class="active"><a href="./" class="fa fa-facebook"></a></li>
-					<li><a href="./" class="fa fa-twitter"></a></li>
-				</ul><!-- /#tabs -->
-			</div>
+			<div class="overlay" style="background:url('./_assets_/images/footer-logo.png')center no-repeat;background-size:cover"></div>
+			<div class="clearfix">
+				<h2>connect with us</h2>
+				<div id="filter">
+					<a href="./">@townofnewcanaan</a>
+					<span>filter:</span>
+					<ul id="tabs">
+						<li class="active"><a href="./" class="fa fa-facebook"></a></li>
+						<li><a href="./" class="fa fa-twitter"></a></li>
+					</ul><!-- /#tabs -->
+				</div><!-- /.filter -->
+			</div><!-- /.clearfix -->
+			
 			<div id="social-wrapper">
 				<div id="tabs-content">
 					<div class="active">
 						<div id="social-feed"></div>
 					</div>
-					<div>
+					<!-- <div>
 						twitter stuffs
-					</div>
-				</div>
+					</div> -->
+				</div><!-- /#tabs-content -->
 			</div><!-- /#social-wrapper -->
 		</div><!-- /.container -->
 	</section><!-- /#connect -->
@@ -221,7 +227,7 @@
 
 <footer>
 	<div class="container">
-			<span>Powered by <a href="https://www.revize.com/" id="revize-logo">revize.</a>, The Government Website Experts</span>
+			<span>Powered by <a href="https://www.revize.com/" id="revize-logo">revize.</a> - The Government Website Experts.</span>
 	</div><!-- /.container -->
 </footer>
 
