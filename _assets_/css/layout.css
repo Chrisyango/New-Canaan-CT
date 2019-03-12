@@ -247,16 +247,14 @@ body{overflow-x:hidden}
 
 
 /*--------------- #nav ---------------*/
-header {background-color: #6b777d;}
+header {position: relative; background-color: #6b777d; box-shadow: 0 10px 40px 5px rgba(0,0,0,.1);}
 header .container {padding: 36px 15px 29px;}
-#logo {display: block; width: 351px; float: left;}
+#logo {display: inline-block; width: 351px;}
 #nav-toggle,
 .toggle,
 .toggle2{display:none}
 
-#right-nav {float: right;}
 #top-nav {text-align: right; margin-top: 2px;}
-#top-nav div {display: inline-block;}
 
 #weather span:first-of-type {font-family: 'Miller'; font-size: 18px; line-height: 32px; color: #000;}
 #weather i {color: #fff; font-size: 40px; margin-left: 15px; line-height: 0;}
@@ -273,11 +271,10 @@ header .container {padding: 36px 15px 29px;}
 #search button {position: absolute; top: 0; right: 0; height: 35px; line-height: 35px; width: 35px; padding: 0; margin: 0; font-size:16px; text-align: center; border-radius: 25px; background-color: #464449;}
 #search button i {opacity: 0.6;}
 
-nav {margin-top: 25px; font-size: 0;}
+nav {font-size: 0;}
 nav ul {margin: 0; padding: 0;}
 #nav li {position: relative; display: inline-block; margin: 0;}
-#nav li a {font-size: 18px; line-height: 32px; letter-spacing: 0.025em; padding: 0 27.5px 0 33.5px; text-transform: uppercase; text-decoration: none; color: #fff;}
-#nav>li:not(:last-of-type):after {content: ''; position: absolute; top: 50%; right: 0; transform: translateY(-60%); width: 2px; height: 15px; background-color: rgba(0,0,0,.4);}
+#nav li a {display: inline-block; width: 100%; font-size: 18px; line-height: 32px; letter-spacing: 0.025em; padding: 0 27.5px 0 33.5px; text-transform: uppercase; text-decoration: none; color: #fff;}
 
 #nav>li>ul {
     -moz-column-count: 4;
@@ -294,7 +291,7 @@ nav ul {margin: 0; padding: 0;}
 
 /*--------------- #yt-player ---------------*/
 #yt-player {padding: 40px 0;}
-#video-bg {height: 740px!important; padding-bottom: 0!important;}
+#video-bg {box-shadow: 0 0 30px 5px rgba(0,0,0,.1);}
 
 
 /*--------------- #quick-links ---------------*/
@@ -366,12 +363,11 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 
 #social-wrapper {margin-top: 6px;}
 #social-feed {position: relative; z-index: 1;}
-.social-feed-element {display: inline-block; width: 22.164179104477615%; margin-right:3.781094527%; height: 365px}
+.social-feed-element {display: inline-block; width: 22.164179104477615%; margin-right:3.781094527%; min-height: 365px; background-color: #ebebeb; border-radius: 2px;}
 .social-feed-element:last-of-type {margin: 0;}
-.social-img {height: 205px;}
-.social-img img {height: 100%;}
-.text-wrapper {background-color: #ebebeb;}
-.social-feed-text {font-size: 20px; line-height: 30px; font-weight: 600; text-transform: capitalize; color: #252525;}
+.social-img {height: 205px; text-align: center;}
+.social-img img {height: 100%; border-radius: 2px 2px 0 0}
+.social-feed-text {font-size: 20px; line-height: 30px; font-weight: 600; text-transform: capitalize; color: #252525; margin: 0; padding: 33px 30px;}
 
 
 /*--------------- #footer-links ---------------*/
@@ -492,6 +488,38 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#flyout .focused .toggle,#nav .focused .toggle2{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 	#flyout,#nav{display:block!important}
 
+	nav {margin-top: 25px;}
+	#logo {float:left;}
+	#right-nav {float: right;}
+	#top-nav div {display: inline-block;}
+	#nav>li:not(:last-of-type):after {content: ''; position: absolute; top: 50%; right: 0; transform: translateY(-60%); width: 2px; height: 15px; background-color: rgba(0,0,0,.4);}
+
+	#video-bg {height: 740px!important; padding-bottom: 0!important;}
+}
+
+@media only screen and (max-width:1440px) {
+
+	/*--------------- #nav ---------------*/
+	#logo {width: 270px;}
+
+	#top-nav {margin: 0}
+	#weather span:first-of-type {font-size: 16px;}
+	#weather i {font-size: 32px;}
+	.social-links a {font-size: 18px; width: 30px; height: 30px; line-height: 30px;}
+	#search input {font-size: 14px; height: 30px;}
+	#search input::placeholder {font-size: 14px;}
+	#search button {font-size: 14px; height: 30px; line-height: 30px; width: 30px;}
+
+	#nav li a {font-size: 16px; padding: 0 10px;}
+}
+
+@media only screen and (max-width:1040px) {
+
+	/*--------------- #nav ---------------*/
+	#logo {width: 240px;}
+
+	.social-links {margin-right: 15px;}
+	.social-links a {margin-left: 10px;}
 }
 
 @media only screen and (max-width:991px) {
@@ -503,6 +531,7 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#freeform #formwizziwmorf tr table tr{display:table-row!important}
 	#freeform #formwizziwmorf tr table td{display:table-cell!important}
 
+	header .container {padding: 15px;}
 	.toggle,
 	.toggle2,
 	#nav-toggle{display:inline-block;cursor:pointer}
@@ -510,7 +539,7 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#nav{display:none}
 	#nav li{float:none;display:block}
 	#nav li a,
-	#nav li span{padding:20px 30px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px}
+	#nav li span{padding:15px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px}
 	#nav ul{position:static;top:0;padding:0;background:rgba(0,0,0,.2)}
 	#nav li:hover > ul{display:none}
 	#nav ul a,
@@ -520,6 +549,11 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#nav .toggle2{position:absolute;right:0;top:0;background:rgba(0,0,0,.2);height:55px;width:55px;line-height:55px;text-align:center}
 	#nav li li:hover > a{background:none;color:#fff}
 
+	#search {display: none; position: absolute; top: calc(100% + 5px); right: 15px; z-index: 100;}
+	#toggles{float:right}
+	#search-toggle,
+	#nav-toggle{line-height:45px;width:45px;text-align:center;border:1px solid rgba(255,255,255,.15);cursor:pointer;font-size:20px;color:#fff;border-radius:4px;margin-left:5px; margin-top: 5px;}
+
 	#flyout{display:none}
 	#flyout li{}
 	#flyout li a,
@@ -528,6 +562,9 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#flyout ul a,
 	#flyout ul span{width:100%}
 	#flyout li:hover > ul{display:none}
+
+	/*--------------- #yt-player ---------------*/
+	/* #video-bg {height: unset!important;} */
 
 }
 
@@ -547,7 +584,9 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 @media only screen and (min-width:480px) and (max-width:767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width:479px) {}
+@media only screen and (max-width:479px) {
+	#logo {width: 200px;}
+}
 
 @media print {
 	.nav-wrap,

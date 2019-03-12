@@ -46,6 +46,7 @@
 
 		<div id="toggles" class="hidden-lg hidden-md">
 			<div id="nav-toggle" class="fa fa-bars"></div>
+			<div id="search-toggle" class="fa fa-search"></div>
 		</div><!-- /#toggles -->
 
 		<div id="right-nav">
@@ -54,7 +55,7 @@
 					<div id="weather"></div><!-- /#weather -->
 				</div><!-- /.weather -->
 
-				<div class="social-links">
+				<div class="social-links hidden-sm hidden-xs">
 					<a href="./" class="fa fa-twitter"></a>
 					<a href="./" class="fa fa-facebook"></a>
 				</div><!-- /.social-links -->
