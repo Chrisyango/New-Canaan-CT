@@ -216,18 +216,6 @@
 		});
 	}
 
-	// Mega Footer Toggle
-	$('.header-toggle').on('click keydown', function(e) {
-		if (e.keyCode === 13 || e.type === 'click') {
-			var inner = $(this).next('.inner-toggle');
-			if (inner.is(':hidden')) {
-				inner.slideDown('200');
-			} else {
-				inner.slideUp('200');
-			}
-		}
-	});
-
 	// Tabs
 	$('#tabs li a').on('click keydown', function(event) {
 		if (event.key === 'Enter' || event.type === 'click') {
@@ -254,26 +242,6 @@
 			loading_text: "Loading Tweet..."
 		});
 	}
-
-	// Instafeed Feed
-	if(typeof $.fn.Instafeed !== "undefined"){
-		var userFeed = new Instafeed({
-			get: 'user',
-			resolution:'standard_resolution',
-			limit:9,
-			userId: 223202806,
-			accessToken: '303202123.f7e9b72.27c687fbd9c24ecbb29dc92951cdf724'
-		});
-		userFeed.run();
-	}
-
-	// Sticky
-	if(typeof $.fn.sticky !== "undefined"){
-		$("#sticky").sticky({
-			topSpacing:0
-		});
-	}
-
 
 	// bxSlider
 	if(typeof $.fn.bxSlider !== "undefined"){
@@ -307,16 +275,6 @@
 			}
 		});
 	}
-
-	// Preloader
-	$window.load(function() {
-
-		setTimeout(function(){
-			$body.addClass('loaded');
-			 $('#loader-wrapper').fadeOut();
-		}, 600);
-
-	});
 
 	$window.ready(function(){
 
@@ -389,33 +347,6 @@
 				remove: false
 			});
 		}
-
-		// Animations http://www.oxygenna.com/tutorials/scroll-animations-using-waypoints-js-animate-css
-		function onScrollInit( items, trigger ) {
-			items.each( function() {
-				var osElement = $(this),
-					osAnimationClass = osElement.data('os-animation'),
-					osAnimationDelay = osElement.data('os-animation-delay');
-
-				osElement.css({
-					'-moz-animation-delay':     osAnimationDelay,
-					'animation-delay':          osAnimationDelay,
-					'-webkit-animation-delay':  osAnimationDelay
-				});
-
-				var osTrigger = ( trigger ) ? trigger : osElement;
-
-				if(typeof $.fn.waypoint !== "undefined"){
-					osTrigger.waypoint(function() {
-						osElement.addClass('animated').addClass(osAnimationClass);
-					},{
-						triggerOnce: true,
-						offset: '100%'
-					});
-				}
-			});
-		}
-		onScrollInit($('.os-animation'));
 
 		//#Smooth Scrolling
 		$('a[href*=#]:not([href=#],[href*="#collapse"])').click(function() {

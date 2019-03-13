@@ -230,24 +230,6 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 
 /* -----------------------------------------
 
-#loader
-
------------------------------------------*/
-#loader-wrapper{position:fixed;top:0;right:0;bottom:0;left:0;background:#233447;z-index:99999;display:none!important}
-#loader-wrapper img{width:60px;position:absolute;top:50%;left:50%;margin:-30px 0 0 -30px;animation:2s cubic-bezier(0.63, 0.045, 0.34, 1) 0s normal none infinite spinning_animation;-webkit-animation:2s cubic-bezier(0.63, 0.045, 0.34, 1) 0s normal none infinite spinning_animation}
-@keyframes spinning_animation {
-	0%{transform:scale(1) rotate(0deg);-o-transform:scale(1) rotate(0deg)}
-	50%{transform:scale(0.8) rotate(360deg);-o-transform:scale(0.8) rotate(360deg)}
-	100%{transform:scale(1) rotate(720deg);-o-transform:scale(1) rotate(720deg)}
-}
-@-webkit-keyframes spinning_animation {
-	0%{-webkit-transform:scale(1) rotate(0deg)}
-	50%{-webkit-transform:scale(0.8) rotate(360deg)}
-	100%{-webkit-transform:scale(1) rotate(720deg)}
-}
-
-/* -----------------------------------------
-
 #main
 
 -----------------------------------------*/
@@ -270,13 +252,13 @@ header .container {padding: 36px 15px 29px;}
 #top-nav {text-align: right; margin-top: 2px;}
 
 #weather span:first-of-type {font-family: 'Miller'; font-size: 18px; line-height: 32px; color: #000;}
-#weather i {color: #fff; font-size: 40px; margin-left: 15px; line-height: 0;}
+#weather i {color: #fff; font-size: 40px; margin-left: 15px; line-height: 0; font-style:normal;}
 #weather .forecast {color: #fff; font-size: 17px; margin-left: 13px;}
 
 .social-links {margin-right: 27px;}
 .social-links a {font-size: 20px; text-decoration: none; width: 35px; height: 35px; line-height: 35px; text-align: center; background-color: #464449; color: #6b777d; border-radius: 100%; margin-left: 16px;}
 
-#search {position: relative; width: 280px;}
+#search {position: relative; width: 280px; top: -1px;}
 #search form {margin: 0;}
 #search label {display: none;}
 #search input {font-family: 'Miller'; font-size: 16px; height: 35px; border-radius: 25px; padding: 0 48px 0 18px; color: #000;}
