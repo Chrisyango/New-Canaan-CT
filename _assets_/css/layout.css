@@ -253,7 +253,7 @@ header .container{padding:36px 15px 0}
 #top-nav{text-align:right;margin-top:1px}
 
 #weather span:first-of-type{font-family:'Miller';font-size:18px;line-height:32px;color:#000}
-#weather i{position:relative;top:10px;color:#ddde90;font-size:50px;margin-left:14px;line-height:0;font-style:normal}
+#weather i{position:relative;color:#ddde90;font-size:50px;margin-left:14px;line-height:0;font-style:normal}
 #weather .forecast{color:#fff;font-size:17px;margin-left:9px}
 
 .social-links{margin-right:27px}
