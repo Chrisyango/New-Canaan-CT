@@ -365,7 +365,7 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 #connect .container {width: 1370px;}
 #connect .overlay {position: absolute; top: -3px; right: 256px; width: 595px; height: 601px; opacity: 0.1;}
 #connect h2 {float: left; font-family: 'Avenir-Demi'; font-size: 40px; line-height: 32px; letter-spacing: 0.025em; text-transform: uppercase; color: #fff;}
-#filter {float: right; font-size: 0; margin: 17px 1px 0 0;}
+#filter {position: relative; z-index: 1; float: right; font-size: 0; margin: 17px 1px 0 0;}
 #filter a {font-size: 16px; line-height: 32px; letter-spacing: 0.05em; color: #ddde90; text-transform: uppercase; margin-right: 32px;}
 #filter span {position: relative; font-size: 16px; line-height: 32px; letter-spacing: 0.05em; color: #c2c2c2; text-transform: uppercase; margin: 0 4px 0 29px;}
 #filter span:after {content: ''; position: absolute; top: 50%; left: -31px; transform: translateY(-50%); width: 2px; height: 15px; background-color: rgba(0,0,0,.2);}
@@ -373,15 +373,20 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 #tabs li {display: inline-block; margin: 0;}
 #tabs {margin: 0; padding: 0;}
 #tabs li a {font-size: 17px; text-decoration: none; color: #c2c2c2; border: 4px solid #c2c2c2; border-radius: 100%; width: 35px; height: 35px; line-height: 30px; text-align: center; margin: 0 0 0 15px;}
-#tabs li a:hover {color: #6c777d; background-color: #fff; border-color: #fff;}
+#tabs li a:hover,
+#tabs li.active a {color: #6c777d; background-color: #fff; border-color: #fff;}
+
+#tabs-content>div {display: none;}
+#tabs-content>.active {display: block;}
 
 #social-wrapper {margin-top: 6px;}
 #social-feed {position: relative; z-index: 1;}
-.social-feed-element {display: inline-block; width: 22.164179104477615%; margin-right:3.781094527%; min-height: 365px; background-color: #ebebeb; border-radius: 2px;}
-.social-feed-element:last-of-type {margin: 0;}
+.social-feed-element .content {background-color: #ebebeb; border-radius: 2px;}
 .social-img {height: 205px; text-align: center;}
-.social-img img {height: 100%; border-radius: 2px 2px 0 0}
-.social-feed-text {font-family: 'Avenir-Demi'; font-size: 20px; line-height: 30px; text-transform: capitalize; color: #252525; margin: 0; padding: 33px 30px;}
+.social-img img {height: 100%; width: 100%; border-radius: 2px 2px 0 0}
+.text-wrapper {padding: 33px 30px;}
+.social-feed-text {font-family: 'Avenir-Demi'; font-size: 20px; line-height: 30px; text-transform: capitalize; color: #252525; margin-bottom: 15px;}
+.read-button {font-size: 16px; text-transform: capitalize;}
 
 
 /*--------------- #footer-links ---------------*/
@@ -433,6 +438,7 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 #freeform #quick-links h2 {font-family: 'Avenir-Bold'; font-size: 32px; line-height: 32px; letter-spacing: 0.015em; color: #252525; text-transform: uppercase; padding: 0;}
 
 /*--------------- #entry ---------------*/
+#freeform.fullwidth #entry {padding-left: 0; padding-right: 0;}
 .header:before {content: ''; position: absolute; top: -31px; left: -80px; width: 433px; height: 50px; background-color: #ddde90; z-index: -1;}
 #entry {padding: 67px 10px 95px 0;}
 #post p {font-size: 16px; line-height: 32px; letter-spacing: 0.005em; color: #000; margin-bottom: 32px;}
@@ -578,6 +584,9 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#signup input::placeholder {font-size: 14px;}
 	#signup .btn {width: 200px;}
 
+	/*--------------- #connect ---------------*/
+	#connect h2 {font-size: 36px;}
+
 	/*--------------- #footer-links ---------------*/
 	#footer-nav a {font-size: 16px; margin-right: 50px;}
 	#footer-nav a:not(:last-of-type):after {right: -25px;}
@@ -604,9 +613,6 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	/*--------------- #quick-links ---------------*/
 	#freeform #quick-links h2 {font-size: 26px;}
 	#freeform a.quick-link {padding: 25px}
-
-	
-
 	
 }
 
@@ -679,6 +685,15 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	/*--------------- #calendar ---------------*/
 	#calendar {padding: 50px 0;}
 
+	/*--------------- #connect ---------------*/
+	#connect h2 {float: none;margin: 0;}
+	#connect .overlay {right: 0; width: 100%}
+	#filter {float: none;margin: 15px 0;}
+	.social-img {height: 300px;}
+	.social-feed-element {margin-bottom: 30px;}
+	.text-wrapper {padding: 15px;}
+	.social-feed-text {font-size: 16px;}
+
 	/*--------------- #footer-links ---------------*/
 	#footer-links {padding: 30px 0;}
 	#footer-nav a {font-size: 14px; margin-right: 15px;}
@@ -697,7 +712,7 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#freeform #slider {height: 450px;}
 
 	/*--------------- #entry ---------------*/
-	#entry {padding: 50px 10px 0 0;}
+	#entry {padding: 50px 0 0 0;}
 	#post ul li a {font-size: 18px;}
 
 }
@@ -723,7 +738,8 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	/*--------------- #content ---------------*/
 	.header,
 	.subheader,
-	#content h2 {font-size: 32px;}
+	#content h2,
+	#connect h2 {font-size: 32px;}
 	#news h2:before {width: 355px;}
 	#notification h2:before {width: 510px;}
 	#news h2,
@@ -737,6 +753,10 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#signup label {font-size: 20px;}
 	#signup input {height: 40px;}
 	#signup .btn {font-size: 13px;}
+
+	/*--------------- #connect ---------------*/
+	.social-img {height: 350px}
+	.social-feed-element {width: 60%; margin: 0 auto 30px;}
 
 	/*--------------- #footer-links ---------------*/
 	#left-links,
@@ -776,12 +796,21 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#freeform a.quick-link,
 	a.quick-link {padding-left: 30px;}
 
+	/*--------------- #connect ---------------*/
+	#filter a {display: block;}
+	#filter span {margin-left: 0;}
+	#filter span:after {display: none;}
+	.social-feed-element {width: 100%;}
+	.social-feed-text {font-size: 14px;}
+	.read-button {font-size: 12px;}
+
 	/*--------------- #content ---------------*/
 	.header,
 	.subheader,
-	#content h2 {font-size: 28px;}
-	#news h2:before {top: -20px; width: 320px; height: 35px;}
-	#notification h2:before {top: -20px; width: 450px; height: 35px; overflow:hidden;}
+	#content h2,
+	#connect h2 {font-size: 28px;}
+	#news h2:before {top: -20px; width: calc(100% + 110px); height: 35px;}
+	#notification h2:before {top: -20px; width: calc(100% + 110px); height: 35px; overflow:hidden;}
 	#news h2,
 	#news .btn {float: none;}
 	#news .btn {font-size: 12px; width: 160px;}

@@ -229,16 +229,14 @@
 	});
 
 	// Tabs
-	$('#tabs li a').on('click keypress', function(e) {
-		$('#tabs li, #tabs-content .current').removeClass('current').removeClass('fadeInLeft');
-		$(this).parent().addClass('current');
-
-		var currentTab = $(this).attr('href');
-		
-		e.preventDefault();
-		$(currentTab).addClass('current animated fadeInLeft');
-		$(currentTab).find('h2').focus();
-	})
+	$('#tabs li a').on('click keydown', function(event) {
+		if (event.key === 'Enter' || event.type === 'click') {
+			event.preventDefault();
+			$('#tabs li, #tabs-content>div').removeClass('active');
+			$(this).parent().addClass('active');
+			$('#tabs-content>div').eq($(this).parent().index()).addClass('active');
+		}
+	});
 
 	// Twitter Feed
 	if(typeof $.fn.tweet !== "undefined"){
@@ -367,14 +365,6 @@
 							accounts: ['@spanishforklibrary'],
 							limit: 4,
 							access_token: 'EAAMkcCLFBs8BAEnpzLa3fg98gku0FhSwmvKZAujQ5m6RLRlHnIUnPaAexISWwIMA4VEoHuFUEWufVXIsasnQFRaDys2613NJUqt5sE5FqAr1sYrgnLZBPgeDmP8cZAkv7sFZBQOxUdrz2B7udHItF8tNMWiZC5iJfqkmWWK06BQZDZD'
-					},
-					// TWITTER
-					twitter:{
-						accounts: ['@spacex'],                       //Array: Specify a list of accounts from which to pull tweets
-						limit: 4,                                    //Integer: max number of tweets to load
-						consumer_key: 'YOUR_CONSUMER_KEY',           //String: consumer key. make sure to have your app read-only
-						consumer_secret: 'YOUR_CONSUMER_SECRET_KEY', //String: consumer secret key. make sure to have your app read-only
-						tweet_mode: 'compatibility'                  //String: change to "extended" to show the whole tweet
 					},
 					template: "_assets_/templates/template.html",
 					length: 70,

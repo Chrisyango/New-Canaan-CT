@@ -179,8 +179,8 @@
 					<a href="./">@townofnewcanaan</a>
 					<span>filter:</span>
 					<ul id="tabs">
-						<li class="active"><a href="./" class="fa fa-facebook"></a></li>
-						<li><a href="./" class="fa fa-twitter"></a></li>
+						<li class="active"><a href="#facebook" class="fa fa-facebook"></a></li>
+						<li><a href="twitter" class="fa fa-twitter"></a></li>
 					</ul><!-- /#tabs -->
 				</div><!-- /.filter -->
 			</div><!-- /.clearfix -->
@@ -188,11 +188,11 @@
 			<div id="social-wrapper">
 				<div id="tabs-content">
 					<div class="active">
-						<div id="social-feed"></div>
+						<div id="social-feed" class="row"></div>
 					</div>
-					<!-- <div>
+					<div>
 						twitter stuffs
-					</div> -->
+					</div>
 				</div><!-- /#tabs-content -->
 			</div><!-- /#social-wrapper -->
 		</div><!-- /.container -->
