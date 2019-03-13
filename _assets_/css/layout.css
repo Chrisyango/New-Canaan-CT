@@ -2,7 +2,7 @@
 
 	Theme Name: New Canaan, CT
 	Front-end Developer: Chris Yang
-	Author Design: Samir Alley @samiralley | Tom Gooden @good3n
+	Author Design: Kat Wiard
 	Author URI: http://www.revize.com/
 	Date: March 11, 2019
 
@@ -243,23 +243,24 @@ body{overflow-x:hidden}
 
 
 /*--------------- #nav ---------------*/
-header {position: relative; background-color: #6b777d; box-shadow: 0 10px 40px 5px rgba(0,0,0,.1);}
-header .container {padding: 36px 15px 29px;}
+header {position: relative; background-color: #6b777d; box-shadow: 0 10px 40px 5px rgba(0,0,0,.1);z-index:100}
+header .container {padding: 36px 15px 0;}
 #logo {display: inline-block; width: 351px;}
 #nav-toggle,
 .toggle,
 .toggle2{display:none}
 
-#top-nav {text-align: right; margin-top: 2px;}
+#top-nav {text-align: right; margin-top: 1px;}
 
 #weather span:first-of-type {font-family: 'Miller'; font-size: 18px; line-height: 32px; color: #000;}
-#weather i {color: #fff; font-size: 40px; margin-left: 15px; line-height: 0; font-style:normal;}
-#weather .forecast {color: #fff; font-size: 17px; margin-left: 13px;}
+#weather i {position: relative; top: 10px; color: #ddde90; font-size: 50px; margin-left: 14px; line-height: 0; font-style:normal;}
+#weather .forecast {color: #fff; font-size: 17px; margin-left: 9px;}
 
 .social-links {margin-right: 27px;}
 .social-links a {font-size: 20px; text-decoration: none; width: 35px; height: 35px; line-height: 35px; text-align: center; background-color: #464449; color: #6b777d; border-radius: 100%; margin-left: 16px;}
+.social-links a:first-of-type {margin-left: 26px;}
 
-#search {position: relative; width: 280px; top: -1px;}
+#search {position: relative; width: 280px;}
 #search form {margin: 0;}
 #search label {display: none;}
 #search input {font-family: 'Miller'; font-size: 16px; height: 35px; border-radius: 25px; padding: 0 48px 0 18px; color: #000;}
@@ -270,9 +271,9 @@ header .container {padding: 36px 15px 29px;}
 nav {font-size: 0;}
 nav ul {margin: 0; padding: 0;}
 #nav li {position: relative; display: inline-block; margin: 0;}
-#nav li a {font-family: 'Avenir-Med'; display: inline-block; width: 100%; font-size: 18px; line-height: 32px; letter-spacing: 0.025em; padding: 0 26.5px 0 33.5px; text-transform: uppercase; text-decoration: none; color: #fff;}
+#nav li a {font-family: 'Avenir-Med'; display: inline-block; width: 100%; font-size: 18px; line-height: 32px; letter-spacing: 0.025em; padding: 0 26.5px 32px 33.5px; text-transform: uppercase; text-decoration: none; color: #fff;}
 
-#nav>li>ul {display: none;}
+#nav>li ul {display: none;}
 
 #nav>li>ul li{display:inline-block;width:100%}
 #nav>li>ul li a{display:block}
@@ -337,7 +338,7 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 
 
 /*--------------- #connect ---------------*/
-#connect {position: relative; background-color: #6c777d; padding: 60px 0 47px;}
+#connect {position: relative; background-color: #6c777d; padding: 60px 0 80px;}
 #connect .container {width: 1370px;}
 #connect .overlay {position: absolute; top: -3px; right: 256px; width: 595px; height: 601px; opacity: 0.1;}
 #connect h2 {float: left; font-family: 'Avenir-Demi'; font-size: 40px; line-height: 32px; letter-spacing: 0.025em; text-transform: uppercase; color: #fff;}
@@ -347,7 +348,7 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 #filter span:after {content: ''; position: absolute; top: 50%; left: -31px; transform: translateY(-50%); width: 2px; height: 15px; background-color: rgba(0,0,0,.2);}
 #tabs,
 #tabs li {display: inline-block; margin: 0;}
-#tabs {margin: 0; padding: 0;}
+#tabs {position: relative; top: 3px; margin: 0; padding: 0;}
 #tabs li a {font-size: 17px; text-decoration: none; color: #c2c2c2; border: 4px solid #c2c2c2; border-radius: 100%; width: 35px; height: 35px; line-height: 30px; text-align: center; margin: 0 0 0 15px;}
 #tabs li a:hover,
 #tabs li.active a {color: #6c777d; background-color: #fff; border-color: #fff;}
@@ -356,22 +357,33 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 #tabs-content>.active {display: block;}
 
 #social-wrapper {margin-top: 6px;}
+#twitter-feed,
 #social-feed {position: relative; z-index: 1;}
 .social-feed-element .content {background-color: #ebebeb; border-radius: 2px;}
-.social-img {height: 205px; text-align: center;}
-.social-img img {height: 100%; width: 100%; border-radius: 2px 2px 0 0}
+.social-img {height: 205px; text-align: center; overflow: hidden;}
+.social-img img {width: 100%; border-radius: 2px 2px 0 0}
 .text-wrapper {padding: 33px 30px;}
-.social-feed-text {font-family: 'Avenir-Demi'; font-size: 20px; line-height: 30px; text-transform: capitalize; color: #252525; margin-bottom: 15px;}
-.read-button {font-size: 16px; text-transform: capitalize;}
+.social-feed-text {font-family: 'Avenir-Demi'; font-size: 20px; line-height: 30px; text-transform: capitalize; text-decoration: none; color: #252525!important; margin-bottom: 15px;}
 
+#twitter-feed ul {margin: 0; padding: 0;}
+#twitter-feed li {position: relative; display: block; margin: 0; width: 22.164179104477615%; margin-right: 3.781094527%; padding: 15px; background-color: #ebebeb; border-radius: 2px;}
+#twitter-feed li:last-of-type {margin: 0;}
+.tweet_avatar {position: absolute; top: 15px;}
+.tweet_time {display: none;}
+.tweet_text {display: inline-block; width: calc(100% - 70px); margin-left: 50px;font-family: 'Avenir-Demi'; font-size: 20px; line-height: 30px; text-transform: capitalize;}
+.tweet_text a:first-of-type {display: none;}
 
 /*--------------- #footer-links ---------------*/
-#footer-links {position: relative; padding: 53px 0 52px; background-color: #6b777d; box-shadow: 0 -10px 40px 5px rgba(0,0,0,.1);}
+#footer-links {position: relative; padding: 52px 0 51px; background-color: #6b777d; box-shadow: 0 -10px 40px 5px rgba(0,0,0,.1);}
 
 #left-links {float: left;}
-#footer-nav a {font-family: 'Avenir-Med'; position: relative; font-size: 18px; line-height: 32px; letter-spacing: 0.05em; color: #fff; text-transform: uppercase; text-decoration: none; margin-right: 65px;}
-#footer-nav a:last-of-type {margin: 0;}
-#footer-nav a:not(:last-of-type):after {content: ''; position: absolute; top: 50%; right: -35px; transform: translateY(-55%); width: 3px; height: 20px; background-color: rgba(0,0,0,.6);}
+#footer-nav {margin: 0; padding: 0;}
+#footer-nav li {position: relative; display: inline-block; margin: 0; margin-right: 61px;}
+#footer-nav li a {font-family: 'Avenir-Med'; font-size: 18px; line-height: 32px; letter-spacing: 0.05em; color: #fff; text-transform: uppercase; text-decoration: none;}
+#footer-nav li:last-of-type {margin: 0;}
+#footer-nav li:not(:last-of-type):after {content: ''; position: absolute; top: 50%; right: -35px; transform: translateY(-55%); width: 3px; height: 20px; background-color: rgba(0,0,0,.6);}
+
+#footer-nav ul{display:none !important}
 #contact-info {margin-top: 20px;}
 #contact-info span {position: relative; font-size: 16px; line-height: 32px; letter-spacing: 0.005em; text-transform: capitalize; color: #fff; margin-right: 55px;}
 #contact-info span:first-of-type {text-transform: uppercase;}
@@ -381,13 +393,13 @@ a.quick-link span {position: relative; top: -11px; left: 22px;}
 #right-links {float: right; margin-right: 20px; margin-top: 7px;}
 #right-links>a {font-family: 'Avenir-Bold'; font-size: 18px; line-height: 18px; letter-spacing: 0.05em; color: #fff; text-transform: uppercase; text-decoration: none; border-bottom: 2px solid #b5bbbe; display: block;}
 #right-links>a:last-of-type {color: #252525; border-bottom: 2px solid #252525; display: inline-block; position: relative; top: -5px;}
-#right-links .social-links {display: inline-block; margin: 24px 20px 0 0;}
+#right-links .social-links {display: inline-block; margin: 25px 25px 0 0;}
 #right-links .social-links a {background-color: #ddde90; color: #6b777d;}
 #right-links .social-links a:first-of-type {margin: 0;}
 
 
 /*--------------- footer ---------------*/
-footer {background-color: #0b0b0b; text-align: center; font-family: 'Gotham'; font-size: 14px; line-height: 22px; letter-spacing: 0.05em; color: #fff; padding: 18px 0 19px;}
+footer {position: relative; z-index: 1; background-color: #0b0b0b; text-align: center; font-family: 'Gotham'; font-size: 14px; line-height: 22px; letter-spacing: 0.05em; color: #fff; padding: 18px 0 19px;}
 footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: #fff!important;}
 
 
@@ -516,16 +528,21 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#logo {float:left;}
 	#right-nav {float: right;}
 	#top-nav div {display: inline-block;}
-	#nav>li:not(:last-of-type):after {content: ''; position: absolute; top: 50%; right: 0; transform: translateY(-60%); width: 2px; height: 15px; background-color: rgba(0,0,0,.4);}
-	#nav>li:hover ul {display: block;}
-	#nav>li>ul {position: absolute; top: 100%; left: 0; z-index: 51; background-color: #6b777d;}
-	#nav ul li a {font-size: 14px; padding: 15px;border-bottom: 1px solid rgba(0,0,0,.2);}
+	#nav>li:not(:last-of-type):after {content: ''; position: absolute; top: 25%; right: -5px; transform: translateY(-50%); width: 2px; height: 15px; background-color: rgba(0,0,0,.4);}
+	#nav li:hover>ul {display: block;}
+	#nav ul{position:absolute;left:0;top:100%;background:#464449;width:200px}
+	#nav ul ul{left:100%;top:0;animation-play-state:paused}
+	#nav ul li a {text-transform:none; font-size: 14px; padding:10px 15px;border-bottom: 1px solid rgba(0,0,0,.2);}
+	#nav ul a:hover,#nav ul span:hover{background:rgba(0,0,0,.15)}
 
 	/*--------------- #ytplayer ---------------*/
 	#video-bg {height: 740px!important; padding-bottom: 0!important;}
 
 	/*--------------- #calendar ---------------*/
 	#calendar {padding: 65px 0 65px 63px;}
+
+	/*--------------- #connect ---------------*/
+	.text-wrapper {min-height: 160px;}
 }
 
 @media only screen and (max-width:1440px) {
@@ -548,6 +565,7 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	.quick-link img {width: 40px; height: 34px;}
 
 	/*--------------- #content ---------------*/
+	#content .container>div {padding: 0}
 	#content h2 {font-size: 36px;}
 	#news h2:before {width: 395px;}
 	#notification h2:before {width: 570px;}
@@ -567,8 +585,9 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#connect h2 {font-size: 36px;}
 
 	/*--------------- #footer-links ---------------*/
-	#footer-nav a {font-size: 16px; margin-right: 50px;}
-	#footer-nav a:not(:last-of-type):after {right: -25px;}
+	#footer-nav li {margin-right: 50px;}
+	#footer-nav li a {font-size: 16px;}
+	#footer-nav li:not(:last-of-type):after {right: -25px;}
 	#contact-info span {font-size: 14px; margin-right: 40px;}
 	#contact-info span:not(:last-of-type):after {right: -25px;}
 
@@ -636,7 +655,7 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#nav .toggle2{position:absolute;right:0;top:0;background:rgba(0,0,0,.2);height:45px;width:45px;line-height:45px;text-align:center}
 	#nav li li:hover > a{background:none;color:#fff}
 
-	#search {display: none; position: absolute; top: calc(100% + 5px); right: 15px; z-index: 100;}
+	#search {display: none; margin-top: 15px; width: 100%; z-index: 100;}
 	#toggles{float:right}
 	#search-toggle,
 	#nav-toggle{line-height:45px;width:45px;text-align:center;border:1px solid rgba(255,255,255,.15);cursor:pointer;font-size:20px;color:#fff;border-radius:4px;margin-left:5px; margin-top: 5px;}
@@ -669,15 +688,19 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#connect h2 {float: none;margin: 0;}
 	#connect .overlay {right: 0; width: 100%}
 	#filter {float: none;margin: 15px 0;}
-	.social-img {height: 300px;}
+	.social-img {height: 250px;}
 	.social-feed-element {margin-bottom: 30px;}
 	.text-wrapper {padding: 15px;}
 	.social-feed-text {font-size: 16px;}
+	#twitter-feed li {width: 100%; margin: 30px 0;}
+	.tweet_text {font-size: 16px;}
 
 	/*--------------- #footer-links ---------------*/
 	#footer-links {padding: 30px 0;}
-	#footer-nav a {font-size: 14px; margin-right: 15px;}
-	#footer-nav a:not(:last-of-type):after {right: -10px;}
+	#footer-nav i {display: none;}
+	#footer-nav li {margin-right: 15px;}
+	#footer-nav li a {font-size: 14px;}
+	#footer-nav li:not(:last-of-type):after {right: -10px;}
 	#contact-info span {font-size: 12px; margin-right: 15px;}
 	#contact-info span:not(:last-of-type):after {right: -10px;}
 
@@ -711,7 +734,7 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 
 	/*--------------- #quick-links ---------------*/
 	#freeform a.quick-link,
-	a.quick-link {width: 100%; padding-left: 25%; font-size: 18px;}
+	a.quick-link {width: 100%; padding: 25px 0 15px; font-size: 18px;}
 	.quick-link-img {width: 40px; height: 32px;}
 	#freeform #quick-links h2 {font-size: 22px;}
 
@@ -734,16 +757,13 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#signup input {height: 40px;}
 	#signup .btn {font-size: 13px;}
 
-	/*--------------- #connect ---------------*/
-	.social-img {height: 350px}
-	.social-feed-element {width: 60%; margin: 0 auto 30px;}
-
 	/*--------------- #footer-links ---------------*/
 	#left-links,
 	#right-links {float: none;}
 
-	#footer-nav a {font-size: 12px; margin-right: 5px;}
-	#footer-nav a:not(:last-of-type):after {right: -5px; width: 2px; height: 15px;}
+	#footer-nav li {margin-right: 5px;}
+	#footer-nav li a {font-size: 12px;}
+	#footer-nav li:not(:last-of-type):after {right: -5px; width: 2px; height: 15px;}
 	#contact-info {margin: 0;}
 	#contact-info span {font-size: 11px; margin-right: 5px;}
 	#contact-info span:not(:last-of-type):after {right: -5px; width: 2px; height: 15px;}
@@ -772,17 +792,12 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	/*--------------- #nav ---------------*/
 	#logo {width: 200px;}
 
-	/*--------------- #quick-links ---------------*/
-	#freeform a.quick-link,
-	a.quick-link {padding-left: 30px;}
-
 	/*--------------- #connect ---------------*/
 	#filter a {display: block;}
 	#filter span {margin-left: 0;}
 	#filter span:after {display: none;}
-	.social-feed-element {width: 100%;}
 	.social-feed-text {font-size: 14px;}
-	.read-button {font-size: 12px;}
+	.tweet_text {font-size: 14px;}
 
 	/*--------------- #content ---------------*/
 	.header,

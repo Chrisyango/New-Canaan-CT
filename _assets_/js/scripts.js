@@ -2,7 +2,7 @@
 
 	Theme Name: New Canaan, CT
 	Front-end Developer: Chris Yang
-	Author Design: Samir Alley @samiralley | Tom Gooden @good3n
+	Author Design: Kat Wiard
 	Author URI: http://www.revize.com/
 	Date: March 11, 2019
 
@@ -68,7 +68,7 @@
 	// Keyboard Navigation: Nav, flyout
 	var isClick = false;
 	$("#nav li a, #flyout  li a, a, button, .toggle, .toggle2").on('focusin', function(e) {
-		console.log(isClick);
+
 		if( isClick === false ) {
 			$(".focused").removeClass("focused");
 			$(e.currentTarget).parents("#nav li, #flyout li").addClass("focused");
@@ -199,13 +199,15 @@
 	// revizeWeather
 	if( typeof $.fn.revizeWeather !== "undefined" ){
 		$.fn.revizeWeather({
-			zip: '06840',
+			zip: '32353',
 			city_name: '',
 			unit: 'f',
 			success: function(weather) {
 				var date = new Date();
 				date = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
-				var html = '<span>Weather:</span> <i class="'+weather.icon+'"></i> <span class="forecast">'+weather.temp+'&deg;</span>';
+				var celsius = (weather.temp - 32) * (5/9);
+				celsius = Math.round(celsius);
+				var html = '<span>Weather:</span> <i class="'+weather.icon+'"></i> <span class="forecast">'+weather.temp+'&deg; <span style="color:#000">|</span> '+celsius+'&deg;</span>';
 
 				$("#weather").html(html);
 			},
@@ -229,12 +231,12 @@
 
 	// Twitter Feed
 	if(typeof $.fn.tweet !== "undefined"){
-		$("#twitterfeed").tweet({
+		$("#twitter-feed").tweet({
 			modpath: '_assets_/plugins/twitter/',
-			username: "RevizeSoftware",
+			username: "NCAdvertiser",
 			join_text: "auto",
-			avatar_size: 0,
-			count: 1,
+			avatar_size: 30,
+			count: 4,
 			auto_join_text_default: "",
 			auto_join_text_ed: "",
 			auto_join_text_ing: "",
@@ -242,6 +244,10 @@
 			auto_join_text_url: "",
 			loading_text: "Loading Tweet..."
 		});
+	}
+
+	if($('#twitter-feed>ul>li')) {
+		$('#twitter-feed>ul>li').addClass('col-md-3').matchHeight();
 	}
 
 	// bxSlider
@@ -278,6 +284,8 @@
 	}
 
 	$window.ready(function(){
+		
+		$('#nav').clone().prependTo('#left-links').attr('id','footer-nav');
 
 		$("#skip").click(function(event){
     
@@ -332,6 +340,17 @@
 		}
 		fillSide();
 		$window.resize(fillSide);
+		
+		// matchHeight
+		if(typeof $.fn.matchHeight !== "undefined"){
+			$('.equal').matchHeight({
+				//defaults
+				byRow: true,
+				property: 'height', // height or min-height
+				target: null,
+				remove: false
+			});
+		}
 
 		// Social Feed
 		if ( typeof $.fn.socialfeed !== "undefined"){
@@ -343,8 +362,11 @@
 							access_token: 'EAAMkcCLFBs8BAEnpzLa3fg98gku0FhSwmvKZAujQ5m6RLRlHnIUnPaAexISWwIMA4VEoHuFUEWufVXIsasnQFRaDys2613NJUqt5sE5FqAr1sYrgnLZBPgeDmP8cZAkv7sFZBQOxUdrz2B7udHItF8tNMWiZC5iJfqkmWWK06BQZDZD'
 					},
 					template: "_assets_/templates/template.html",
-					length: 70,
-					show_media: true
+					length: 45,
+					show_media: true,
+					callback:function(){
+						$('.text-wrapper').matchHeight();
+					}
 			});
 		}
 
@@ -355,16 +377,6 @@
 			});
 		}
 
-		// matchHeight
-		if(typeof $.fn.matchHeight !== "undefined"){
-			$('.equal').matchHeight({
-				//defaults
-				byRow: true,
-				property: 'height', // height or min-height
-				target: null,
-				remove: false
-			});
-		}
 
 		//#Smooth Scrolling
 		$('a[href*=#]:not([href=#],[href*="#collapse"])').click(function() {

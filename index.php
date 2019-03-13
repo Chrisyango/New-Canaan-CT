@@ -79,7 +79,14 @@
 						<a href="./">services</a>
 						<ul>
 							<li><a href="./">this is a link</a></li>
-							<li><a href="./">this is a link</a></li>
+							<li><a href="./">this is a link</a>
+								<ul>
+									<li><a href="./">this is a link</a></li>
+									<li><a href="./">this is a link</a></li>
+									<li><a href="./">this is a link</a></li>
+									<li><a href="./">this is a link</a></li>
+								</ul>
+							</li>
 							<li><a href="./">this is a link</a></li>
 							<li><a href="./">this is a link</a></li>
 						</ul>
@@ -97,7 +104,7 @@
 		<div class="container">
 			<div id="video-wrap" style="background: url('./_assets_/images/hero.jpg') center no-repeat; background-size: cover;">
 				<div id="video-bg" class="player"
-					data-property="{videoURL:'https://www.youtube.com/watch?v=Ghn-B3jmuSA',containment:'#video-bg',startAt:0,mute:false,autoPlay:false,loop:true,opacity:1,showControls:false}">
+					data-property="{videoURL:'https://www.youtube.com/watch?v=BUT2TBu0bwE',containment:'#video-bg',startAt:0,mute:false,autoPlay:false,loop:true,opacity:1,showControls:false}">
 				</div>
 			</div><!-- /#video-wrap -->
 		</div><!-- /.container -->
@@ -199,7 +206,7 @@
 						<div id="social-feed" class="row"></div>
 					</div>
 					<div>
-						twitter stuffs
+						<div id="twitter-feed"></div>
 					</div>
 				</div><!-- /#tabs-content -->
 			</div><!-- /#social-wrapper -->
@@ -209,13 +216,6 @@
 	<section id="footer-links">
 		<div class="container">
 			<section id="left-links">
-				<div id="footer-nav">
-					<a href="./">community</a>
-					<a href="./">goverment</a>
-					<a href="./">departments</a>
-					<a href="./">services</a>
-					<a href="./">how do i...</a>
-				</div><!-- /#footer-nav -->
 				<div id="contact-info">
 					<span>&copy; 2018 new canaan</span>
 					<span>77 main street, new canaan, ct 06840</span>
@@ -312,7 +312,6 @@
 <script src="_assets_/js/jquery.mb.YTPlayer.min.js"></script>
 <script src="_assets_/plugins/modernizr/modernizr.custom.js"></script>
 <script src="_assets_/plugins/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
-<script src="_assets_/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
 <script src="_assets_/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="_assets_/plugins/twitter/js/jquery.tweet.min.js"></script>
 <script src="_assets_/plugins/matchHeight/dist/jquery.matchHeight-min.js"></script>

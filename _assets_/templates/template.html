@@ -1,12 +1,11 @@
-<div class="equal col-md-3 col-sm-6 social-feed-element {{? !it.moderation_passed}}hidden{{?}}" dt-create="{{=it.dt_create}}" social-feed-id = "{{=it.id}}">
+<div class="col-md-3 col-sm-6 social-feed-element {{? !it.moderation_passed}}hidden{{?}}" dt-create="{{=it.dt_create}}" social-feed-id = "{{=it.id}}">
     <div class='content'>
         <div class="media-body">
             <div class="social-img">
                 {{=it.attachment}}
             </div>
             <div class='text-wrapper'>
-                <p class="social-feed-text">{{=it.text}}</p>
-                <a href="{{=it.link}}" target="_blank" class="read-button">read more</a>
+                <a href="{{=it.link}}" target="_blank" class="social-feed-text">{{=it.text}}</a>
             </div>
         </div>
     </div>  
