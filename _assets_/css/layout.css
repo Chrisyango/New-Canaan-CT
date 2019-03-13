@@ -585,9 +585,9 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#connect h2 {font-size: 36px;}
 
 	/*--------------- #footer-links ---------------*/
-	#footer-nav li {margin-right: 50px;}
+	#footer-nav li {margin-right: 30px;}
 	#footer-nav li a {font-size: 16px;}
-	#footer-nav li:not(:last-of-type):after {right: -25px;}
+	#footer-nav li:not(:last-of-type):after {right: -20px;}
 	#contact-info span {font-size: 14px; margin-right: 40px;}
 	#contact-info span:not(:last-of-type):after {right: -25px;}
 
@@ -698,9 +698,9 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	/*--------------- #footer-links ---------------*/
 	#footer-links {padding: 30px 0;}
 	#footer-nav i {display: none;}
-	#footer-nav li {margin-right: 15px;}
+	#footer-nav li {margin-right: 8px;}
 	#footer-nav li a {font-size: 14px;}
-	#footer-nav li:not(:last-of-type):after {right: -10px;}
+	#footer-nav li:not(:last-of-type):after {right: -8px;}
 	#contact-info span {font-size: 12px; margin-right: 15px;}
 	#contact-info span:not(:last-of-type):after {right: -10px;}
 
