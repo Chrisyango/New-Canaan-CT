@@ -39,8 +39,8 @@
 		</a><!-- /.logo -->
 
 		<div id="toggles" class="hidden-lg hidden-md">
-			<div id="search-toggle" class="fa fa-search"></div>
-			<div id="nav-toggle" class="fa fa-bars"></div>	
+			<div tabindex="0" id="search-toggle" class="fa fa-search"></div>
+			<div tabindex="0" id="nav-toggle" class="fa fa-bars"></div>	
 		</div><!-- /#toggles -->
 
 		<div id="right-nav">
@@ -72,7 +72,14 @@
 						<a href="./">services</a>
 						<ul>
 							<li><a href="./">this is a link</a></li>
-							<li><a href="./">this is a link</a></li>
+							<li><a href="./">this is a link</a>
+								<ul>
+									<li><a href="./">this is a link</a></li>
+									<li><a href="./">this is a link</a></li>
+									<li><a href="./">this is a link</a></li>
+									<li><a href="./">this is a link</a></li>
+								</ul>
+							</li>
 							<li><a href="./">this is a link</a></li>
 							<li><a href="./">this is a link</a></li>
 						</ul>

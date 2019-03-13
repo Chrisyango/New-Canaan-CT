@@ -409,7 +409,7 @@ footer a{font-family:'Roboto';text-decoration:none;font-size:18px;color:#fff!imp
 
 -----------------------------------------*/
 #freeform main{position:relative}
-#freeform header .container{padding:39px 15px 29px}
+#freeform header .container{padding:39px 15px 0}
 
 #breadcrumbs{font-size:13px;text-transform:capitalize}
 #breadcrumbs p{margin:0}
@@ -558,7 +558,7 @@ footer a{font-family:'Roboto';text-decoration:none;font-size:18px;color:#fff!imp
 	#search input::placeholder{font-size:14px}
 	#search button{font-size:14px;height:30px;line-height:30px;width:30px}
 
-	#nav li a{font-size:16px;padding:0 10px}
+	#nav li a{font-size:16px;padding-left: 10px; padding-right: 10px;}
 
 	/*--------------- #quick-links ---------------*/
 	a.quick-link{padding:30px 20px;font-size:20px}
