@@ -289,15 +289,8 @@ nav ul {margin: 0; padding: 0;}
 #nav li {position: relative; display: inline-block; margin: 0;}
 #nav li a {font-family: 'Avenir-Med'; display: inline-block; width: 100%; font-size: 18px; line-height: 32px; letter-spacing: 0.025em; padding: 0 26.5px 0 33.5px; text-transform: uppercase; text-decoration: none; color: #fff;}
 
-#nav>li>ul {
-    -moz-column-count: 4;
-    -moz-column-gap: 40px;
-    -webkit-column-count: 4;
-    -webkit-column-gap: 40px;
-    column-count: 4;
-    column-gap: 40px;
-    padding:40px
-}
+#nav>li>ul {display: none;}
+
 #nav>li>ul li{display:inline-block;width:100%}
 #nav>li>ul li a{display:block}
 
@@ -541,6 +534,9 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#right-nav {float: right;}
 	#top-nav div {display: inline-block;}
 	#nav>li:not(:last-of-type):after {content: ''; position: absolute; top: 50%; right: 0; transform: translateY(-60%); width: 2px; height: 15px; background-color: rgba(0,0,0,.4);}
+	#nav>li:hover ul {display: block;}
+	#nav>li>ul {position: absolute; top: 100%; left: 0; z-index: 51; background-color: #6b777d;}
+	#nav ul li a {font-size: 14px; padding: 15px;border-bottom: 1px solid rgba(0,0,0,.2);}
 
 	/*--------------- #ytplayer ---------------*/
 	#video-bg {height: 740px!important; padding-bottom: 0!important;}
@@ -638,7 +634,8 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#freeform #formwizziwmorf tr table td{display:table-cell!important}
 	.floating-share-btn{top: unset; bottom: 0; padding: 10.5px; font-size: 11px;}
 
-	header .container {padding: 15px;}
+	header .container,
+	#freeform header .container {padding: 15px;}
 	.toggle,
 	.toggle2,
 	#nav-toggle{display:inline-block;cursor:pointer}
@@ -825,10 +822,16 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 }
 
 @media print {
+	header,
+	footer,
+	#slider,
+	#quick-links,
+	.floating-share-btn,
+	#footer-links,
 	.nav-wrap,
 	.sidebar,
 	#flyout-wrap,
-	.breadcrumbs
+	#breadcrumbs,
 	.e-notify{display:none!important}
 	a[href]:after{content:none!important}
 }

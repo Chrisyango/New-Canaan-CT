@@ -84,7 +84,7 @@
 	});
 
 	// Menu Arrows
-	$("#nav > li:has(ul)").addClass('first-parent').children("a,span").append('<i class="fa fa-angle-down down-arrow">');
+	// $("#nav > li:has(ul)").addClass('first-parent').children("a,span").append('<i class="fa fa-angle-down down-arrow">');
 
 	// Menu Toggles
 	$("#nav >li>ul,#flyout >li>ul").addClass('first-level');
@@ -157,7 +157,7 @@
 	}
 
 	$("#flyout-toggle").on("click", function(){
-		flyout.slideToggle();
+		flyout.stop().slideToggle();
 		$(this).toggleClass("active");
 	});
 

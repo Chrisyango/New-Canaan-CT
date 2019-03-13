@@ -45,8 +45,8 @@
 		</a><!-- /.logo -->
 
 		<div id="toggles" class="hidden-lg hidden-md">
-			<div id="nav-toggle" class="fa fa-bars"></div>
 			<div id="search-toggle" class="fa fa-search"></div>
+			<div id="nav-toggle" class="fa fa-bars"></div>	
 		</div><!-- /#toggles -->
 
 		<div id="right-nav">
@@ -74,14 +74,22 @@
 					<li><a href="./">community</a></li>
 					<li><a href="./">government</a></li>
 					<li><a href="./">departments</a></li>
-					<li><a href="./">services</a></li>
+					<li>
+						<a href="./">services</a>
+						<ul>
+							<li><a href="./">this is a link</a></li>
+							<li><a href="./">this is a link</a></li>
+							<li><a href="./">this is a link</a></li>
+							<li><a href="./">this is a link</a></li>
+						</ul>
+					</li>
 					<li><a href="./">schools</a></li>
 					<li><a href="./">how do i...</a></li>
 				</ul> <!-- /#nav -->
 			</nav>
 		</div><!-- /#right-nav -->
 	</div><!-- /.container -->
-</header>
+</header><!-- /.clearfix -->
 
 <main id="main">
 	<section id="yt-player">
