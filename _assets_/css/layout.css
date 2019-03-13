@@ -685,7 +685,7 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	#calendar {padding: 50px 0;}
 
 	/*--------------- #connect ---------------*/
-	#connect h2 {float: none;margin: 0;}
+	#connect h2 {float: none;margin: 0; padding: 50px 0;}
 	#connect .overlay {right: 0; width: 100%}
 	#filter {float: none;margin: 15px 0;}
 	.social-img {height: 250px;}
@@ -804,8 +804,8 @@ footer a {font-family: 'Roboto'; text-decoration: none; font-size: 18px; color: 
 	.subheader,
 	#content h2,
 	#connect h2 {font-size: 28px;}
-	#news h2:before {top: -20px; width: calc(100% + 110px); height: 35px;}
-	#notification h2:before {top: -20px; width: calc(100% + 110px); height: 35px; overflow:hidden;}
+	#news h2:before {top: -20px; width: calc(100% + 95px); height: 35px;}
+	#notification h2:before {top: -20px; width: calc(100% + 95px); height: 35px; overflow:hidden;}
 	#news h2,
 	#news .btn {float: none;}
 	#news .btn {font-size: 12px; width: 160px;}
