@@ -1,9 +1,10 @@
 /*-----------------------------------------------------------------------------------
 
-	Theme Name: SiteName
+	Theme Name: New Canaan, CT
+	Front-end Developer: Chris Yang
 	Author Design: Samir Alley @samiralley | Tom Gooden @good3n
 	Author URI: http://www.revize.com/
-	Date: MONTH DAY, 2015
+	Date: March 11, 2019
 
 -----------------------------------------------------------------------------------*/
 
@@ -53,13 +54,13 @@
 	}
 
 	// Search Toggle
-	$('#search-toggle').on('click',function(e){
+	$('#search-toggle').on('click keypress',function(e){
 		$('#search').stop().slideToggle(200);
 		$(this).toggleClass('fa-search fa-close');
 	});
 
 	// Navigation Toggle
-	$("#nav-toggle").on("click", function(){
+	$("#nav-toggle").on("click keypress", function(){
 		$("#nav").stop().slideToggle();
 		$(this).toggleClass("active");
 	});
@@ -277,6 +278,23 @@
 	}
 
 	$window.ready(function(){
+
+		$("#skip").click(function(event){
+    
+				// strip the leading hash and declare
+				// the content we're skipping to
+				let skipTo="#"+this.href.split('#')[1];
+
+				// Setting 'tabindex' to -1 takes an element out of normal 
+				// tab flow but allows it to be focused via javascript
+				$(skipTo).attr('tabindex', -1).on('blur focusout', function () {
+
+						// when focus leaves this element, 
+						// remove the tabindex attribute
+						$(this).removeAttr('tabindex');
+
+				}).focus(); // focus on the content container
+		});
 
 		if ($('#side-content').length){
 			$('main').css('position','relative');

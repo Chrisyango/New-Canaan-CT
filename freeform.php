@@ -31,6 +31,8 @@
 <body id="freeform">
 
 <header class="clearfix">
+	<a href="#main" id="skip" tabindex="0">SKIP TO CONTENT</a>
+
 	<div class="container">
 		<a href="./" id="logo">
 			<img src="./_assets_/images/logo.png" alt="Logo">

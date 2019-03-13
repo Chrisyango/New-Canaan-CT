@@ -236,7 +236,8 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 body{overflow-x:hidden}
 .container {width: 1470px; max-width: 100%;}
 .text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-
+#skip{position:fixed;top:150px;left:-100%;-webkit-transition: all .3s ease-in;transition: all .3s ease-in; z-index:100;}
+#skip:focus{left:15px;text-decoration:none;color:#fff;background-color:#2491b2;padding:10px 20px}
 
 #calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
 

@@ -38,14 +38,16 @@
 <body id="homepage">
 
 <header class="clearfix">
+	<a href="#main" id="skip" tabindex="0">SKIP TO CONTENT</a>
+
 	<div class="container">
 		<a href="./" id="logo">
 			<img src="./_assets_/images/logo.png" alt="Logo">
 		</a><!-- /.logo -->
 
 		<div id="toggles" class="hidden-lg hidden-md">
-			<div id="search-toggle" class="fa fa-search"></div>
-			<div id="nav-toggle" class="fa fa-bars"></div>	
+			<div tabindex="0" id="search-toggle" class="fa fa-search"></div>
+			<div tabindex="0" id="nav-toggle" class="fa fa-bars"></div>	
 		</div><!-- /#toggles -->
 
 		<div id="right-nav">
