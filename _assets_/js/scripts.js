@@ -244,10 +244,9 @@
 			auto_join_text_url: "",
 			loading_text: "Loading Tweet..."
 		});
-	}
-
-	if($('#twitter-feed>ul>li')) {
-		$('#twitter-feed>ul>li').addClass('col-md-3').matchHeight();
+		if($('#twitter-feed>ul>li')) {
+			$('#twitter-feed>ul>li').addClass('col-md-3').matchHeight();
+		}
 	}
 
 	// bxSlider

@@ -196,13 +196,6 @@
 	<section id="footer-links">
 		<div class="container">
 			<section id="left-links">
-				<div id="footer-nav">
-					<a href="./">community</a>
-					<a href="./">goverment</a>
-					<a href="./">departments</a>
-					<a href="./">services</a>
-					<a href="./">how do i...</a>
-				</div><!-- /#footer-nav -->
 				<div id="contact-info">
 					<span>&copy; 2018 new canaan</span>
 					<span>77 main street, new canaan, ct 06840</span>
