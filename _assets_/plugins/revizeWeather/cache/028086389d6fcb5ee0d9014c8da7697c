@@ -1,2 +1,2 @@
-1552499373
-{"coord":{"lon":-73.49,"lat":41.15},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"base":"stations","main":{"temp":44.04,"pressure":1027,"humidity":38,"temp_min":41,"temp_max":46.99},"visibility":16093,"wind":{"speed":3.36},"clouds":{"all":1},"dt":1552499198,"sys":{"type":1,"id":4403,"message":0.0094,"country":"US","sunrise":1552475288,"sunset":1552517939},"id":420006825,"name":"Stamford","cod":200}
+1552597265
+{"coord":{"lon":-73.49,"lat":41.15},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"base":"stations","main":{"temp":52.61,"pressure":1021,"humidity":57,"temp_min":48.99,"temp_max":55.99},"visibility":16093,"wind":{"speed":13.87,"deg":130},"clouds":{"all":1},"dt":1552596943,"sys":{"type":1,"id":5258,"message":0.0094,"country":"US","sunrise":1552561576,"sunset":1552604413},"id":420006825,"name":"Stamford","cod":200}

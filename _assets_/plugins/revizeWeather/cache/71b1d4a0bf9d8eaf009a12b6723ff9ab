@@ -1,2 +1,2 @@
-1552506797
-{"coord":{"lon":-84.58,"lat":30.59},"weather":[{"id":711,"main":"Smoke","description":"smoke","icon":"50d"}],"base":"stations","main":{"temp":78.78,"pressure":1020,"humidity":47,"temp_min":77,"temp_max":81},"visibility":16093,"wind":{"speed":11.41,"deg":160},"clouds":{"all":1},"dt":1552506660,"sys":{"type":1,"id":2828,"message":0.0041,"country":"US","sunrise":1552477794,"sunset":1552520739},"id":420004846,"name":"Tallahassee","cod":200}
+1552597207
+{"coord":{"lon":-84.58,"lat":30.59},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04d"}],"base":"stations","main":{"temp":77.79,"pressure":1019,"humidity":65,"temp_min":75,"temp_max":80.6},"visibility":16093,"wind":{"speed":14.99,"deg":170},"clouds":{"all":75},"dt":1552596653,"sys":{"type":1,"id":2828,"message":0.004,"country":"US","sunrise":1552564119,"sunset":1552607180},"id":420004846,"name":"Tallahassee","cod":200}

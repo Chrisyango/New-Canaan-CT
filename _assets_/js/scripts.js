@@ -199,15 +199,13 @@
 	// revizeWeather
 	if( typeof $.fn.revizeWeather !== "undefined" ){
 		$.fn.revizeWeather({
-			zip: '32353',
+			zip: '06840',
 			city_name: '',
 			unit: 'f',
 			success: function(weather) {
 				var date = new Date();
 				date = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
-				var celsius = (weather.temp - 32) * (5/9);
-				celsius = Math.round(celsius);
-				var html = '<span>Weather:</span> <i class="'+weather.icon+'"></i> <span class="forecast">'+weather.temp+'&deg; <span style="color:#000">|</span> '+celsius+'&deg;</span>';
+				var html = '<span>Weather:</span> <i class="'+weather.icon+'"></i> <span class="forecast">'+weather.max+'&deg; <span style="color:#000">|</span> <span style="color:#c2c2c2">'+weather.min+'&deg;</span></span>';
 
 				$("#weather").html(html);
 			},
@@ -445,21 +443,6 @@
 
 		};
 		$('.v-align').flexVerticalCenter();
-
-
-		// Remove matchHeight on document center pages
-		if($('#RZdocument_center').length){
-			$('.aside,.entry').matchHeight({remove:true});
-
-			if(window.matchMedia("(min-width: 992px)").matches){
-				setInterval(function(){
-					if($('.post').outerHeight() + 300 > $('.entry').outerHeight()){
-						$('.aside').css('height',$('.entry').outerHeight() + 'px');
-					}
-				}, 200);
-			}
-		}
-
 
 	}); // Ready
 

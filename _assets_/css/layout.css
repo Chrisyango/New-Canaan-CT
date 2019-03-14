@@ -253,7 +253,7 @@ header .container{padding:36px 15px 0}
 #top-nav{text-align:right;margin-top:1px}
 
 #weather span:first-of-type{font-family:'Miller';font-size:18px;line-height:32px;color:#000}
-#weather i{position:relative;color:#ddde90;font-size:50px;margin-left:14px;line-height:0;font-style:normal}
+#weather i{position:relative;top:10px;color:#ddde90;font-size:50px;margin-left:14px;line-height:0;font-style:normal}
 #weather .forecast{color:#fff;font-size:17px;margin-left:9px}
 
 .social-links{margin-right:27px}
@@ -528,7 +528,7 @@ footer a{font-family:'Roboto';text-decoration:none;font-size:18px;color:#fff!imp
 	#logo{float:left}
 	#right-nav{float:right}
 	#top-nav div{display:inline-block}
-	#nav>li:not(:last-of-type):after{content:'';position:absolute;top:25%;right:-5px;transform:translateY(-50%);width:2px;height:15px;background-color:rgba(0,0,0,.4)}
+	#nav>li:not(:last-of-type):after{content:'';position:absolute;top:25%;right:-2px;transform:translateY(-50%);width:2px;bottom:33px;background-color:rgba(0,0,0,.4)}
 	#nav li:hover>ul{display:block}
 	#nav ul{position:absolute;left:0;top:100%;background:#464449;width:200px}
 	#nav ul ul{left:100%;top:0;animation-play-state:paused}
@@ -546,7 +546,7 @@ footer a{font-family:'Roboto';text-decoration:none;font-size:18px;color:#fff!imp
 }
 
 @media only screen and (max-width:1440px){
-
+	
 	/*--------------- #nav ---------------*/
 	#logo{width:270px}
 
@@ -558,7 +558,7 @@ footer a{font-family:'Roboto';text-decoration:none;font-size:18px;color:#fff!imp
 	#search input::placeholder{font-size:14px}
 	#search button{font-size:14px;height:30px;line-height:30px;width:30px}
 
-	#nav li a{font-size:16px;padding-left: 10px; padding-right: 10px;}
+	#nav li a{font-size:16px;padding-left:15px;padding-right:15px}
 
 	/*--------------- #quick-links ---------------*/
 	a.quick-link{padding:30px 20px;font-size:20px}
@@ -614,7 +614,7 @@ footer a{font-family:'Roboto';text-decoration:none;font-size:18px;color:#fff!imp
 	
 }
 
-@media only screen and (max-width:1040px){
+@media only screen and (max-width:1075px){
 
 	/*--------------- #nav ---------------*/
 	#logo{width:240px}
@@ -624,6 +624,7 @@ footer a{font-family:'Roboto';text-decoration:none;font-size:18px;color:#fff!imp
 
 	/*--------------- #quick-links ---------------*/
 	a.quick-link{width:50%}
+	#nav li a{padding-left:10px;padding-right:10px}
 }
 
 @media only screen and (max-width:991px){
